@@ -1,0 +1,222 @@
+submitted_date,submitted_time,submitted_day,start_date,start_time,start_day,duration_m,wait_m,user,simulator,host,priotiry,min_proc,threads,max_proc,req_perf,req_mem
+2014-09-19,12,Friday,2014-09-19,13,Friday,0.72,3.47,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-19,13,Friday,2014-09-19,13,Friday,0.5,0.03,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-19,13,Friday,2014-09-19,13,Friday,5.07,0.02,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-19,14,Friday,2014-09-19,14,Friday,0.5,0.02,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-22,09,Monday,2014-09-22,09,Monday,14.5,0.02,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-22,09,Monday,2014-09-22,09,Monday,9.32,0.02,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-22,09,Monday,2014-09-22,09,Monday,8.92,9.33,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-22,10,Monday,2014-09-22,10,Monday,2.3,0.0,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-22,10,Monday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-09-22,10,Monday,2014-09-22,10,Monday,61.83,0.12,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-22,11,Monday,2014-09-22,11,Monday,0.07,0.02,jgalipeau,Analyst,local service,0,1,1,1,low,low
+2014-09-22,11,Monday,2014-09-22,11,Monday,0.35,0.0,jgalipeau,Analyst,local service,0,1,1,1,low,low
+2014-09-22,11,Monday,2014-09-22,11,Monday,11.58,0.02,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-22,11,Monday,2014-09-22,11,Monday,4.2,0.17,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-22,12,Monday,2014-09-22,12,Monday,229.28,0.18,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-22,13,Monday,2014-09-22,15,Monday,0.02,166.52,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-22,17,Monday,2014-09-22,17,Monday,254.28,0.17,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-22,17,Monday,2014-09-22,21,Monday,358.48,254.45,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-22,17,Monday,2014-09-23,03,Tuesday,14.25,607.97,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-23,09,Tuesday,2014-09-23,09,Tuesday,238.05,0.18,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-23,13,Tuesday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-09-23,14,Tuesday,2014-09-23,14,Tuesday,344.45,0.17,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-24,10,Wednesday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-09-24,10,Wednesday,2014-09-24,10,Wednesday,0.88,0.18,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-24,17,Wednesday,2014-09-24,17,Wednesday,310.33,0.28,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-24,17,Wednesday,2014-09-24,22,Wednesday,132.05,293.8,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-24,17,Wednesday,2014-09-25,00,Thursday,125.32,425.78,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-24,17,Wednesday,2014-09-25,02,Thursday,120.93,551.07,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-24,17,Wednesday,2014-09-25,04,Thursday,124.72,671.95,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-25,15,Thursday,2014-09-25,15,Thursday,320.18,0.38,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-25,16,Thursday,2014-09-25,20,Thursday,0.5,239.48,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-25,16,Thursday,2014-09-25,20,Thursday,316.9,239.97,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-25,16,Thursday,2014-09-26,02,Friday,0.75,556.8,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-25,17,Thursday,2014-09-26,02,Friday,0.7,538.75,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-26,08,Friday,2014-09-26,08,Friday,0.72,0.82,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-26,08,Friday,2014-09-26,08,Friday,0.75,0.83,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-26,08,Friday,2014-09-26,08,Friday,0.7,0.83,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-26,09,Friday,2014-09-26,09,Friday,0.65,0.83,jgalipeau,Analyst,local service,0,1,1,1,low,low
+2014-09-26,09,Friday,2014-09-26,09,Friday,0.7,0.85,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-26,09,Friday,2014-09-26,09,Friday,0.8,0.93,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-26,09,Friday,2014-09-26,09,Friday,28.1,0.93,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-26,09,Friday,2014-09-26,10,Friday,0.7,26.62,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-26,11,Friday,2014-09-26,11,Friday,0.73,0.93,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-26,12,Friday,2014-09-26,12,Friday,0.65,0.93,jgalipeau,Analyst,local service,0,1,1,1,low,low
+2014-09-26,12,Friday,2014-09-26,12,Friday,0.68,0.93,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-26,13,Friday,2014-09-26,13,Friday,0.68,0.93,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-26,13,Friday,2014-09-26,13,Friday,0.62,0.93,jgalipeau,Analyst,local service,0,1,1,1,low,low
+2014-09-26,13,Friday,2014-09-26,13,Friday,11.1,0.95,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-26,16,Friday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-09-26,16,Friday,2014-09-26,16,Friday,2.3,1.0,jgalipeau,Analyst,local service,0,1,1,1,low,low
+2014-09-26,16,Friday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-09-26,17,Friday,2014-09-26,17,Friday,30.17,0.27,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-26,17,Friday,2014-09-26,17,Friday,25.53,26.52,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-26,17,Friday,2014-09-26,18,Friday,3.07,26.12,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-26,17,Friday,2014-09-26,18,Friday,3.18,29.08,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-29,09,Monday,2014-09-29,09,Monday,0.72,0.93,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-29,10,Monday,2014-09-29,10,Monday,3.17,0.37,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-29,11,Monday,2014-09-29,11,Monday,0.67,0.97,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-29,11,Monday,2014-09-29,11,Monday,0.63,0.97,jgalipeau,Analyst,local service,0,1,1,1,low,low
+2014-09-29,11,Monday,2014-09-29,12,Monday,0.67,0.97,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-29,12,Monday,2014-09-29,12,Monday,0.67,0.98,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-29,12,Monday,2014-09-29,12,Monday,0.62,0.97,jgalipeau,Analyst,local service,0,1,1,1,low,low
+2014-09-29,13,Monday,2014-09-29,13,Monday,0.68,0.98,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-29,13,Monday,2014-09-29,13,Monday,0.72,1.0,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-29,13,Monday,2014-09-29,13,Monday,0.72,0.95,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-29,14,Monday,2014-09-29,14,Monday,0.7,1.08,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-29,14,Monday,2014-09-29,14,Monday,0.72,1.22,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-29,14,Monday,2014-09-29,14,Monday,0.75,0.02,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-29,14,Monday,2014-09-29,14,Monday,0.72,1.45,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-29,15,Monday,2014-09-29,15,Monday,0.67,1.45,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-29,15,Monday,2014-09-29,15,Monday,0.7,1.43,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-29,15,Monday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-09-29,15,Monday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-09-29,15,Monday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-09-29,16,Monday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-09-29,16,Monday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-09-29,16,Monday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-09-29,16,Monday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-09-29,17,Monday,2014-09-29,17,Monday,102.43,1.48,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-09-30,14,Tuesday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-09-30,14,Tuesday,2014-09-30,14,Tuesday,871.72,1.58,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-10-01,09,Wednesday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-10-01,11,Wednesday,2014-10-01,11,Wednesday,47.08,0.07,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-10-01,11,Wednesday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-10-01,11,Wednesday,2014-10-01,11,Wednesday,11.42,22.25,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-10-01,11,Wednesday,2014-10-01,11,Wednesday,14.47,33.68,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-10-01,11,Wednesday,2014-10-01,12,Wednesday,255.7,48.05,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-10-01,14,Wednesday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-10-01,14,Wednesday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-10-01,16,Wednesday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-10-01,16,Wednesday,2014-10-01,16,Wednesday,0.0,0.35,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-10-01,18,Wednesday,2014-10-01,18,Wednesday,512.25,0.38,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-10-01,18,Wednesday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,0,1,1,1,low,low
+2014-10-01,18,Wednesday,2014-10-02,02,Thursday,44.6,507.9,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-10-02,09,Thursday,2014-10-02,09,Thursday,11.48,0.33,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-10-02,09,Thursday,2014-10-02,09,Thursday,14.18,11.83,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-10-02,10,Thursday,2014-10-02,10,Thursday,726.45,1.53,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-10-02,11,Thursday,2014-10-02,11,Thursday,0.38,0.05,jgalipeau,Analyst,local service,0,1,1,1,low,low
+2014-10-02,17,Thursday,2014-10-02,22,Thursday,289.23,282.65,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-10-03,09,Friday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-10-03,14,Friday,2014-10-03,14,Friday,80.75,0.03,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-10-03,16,Friday,2014-10-03,16,Friday,1038.72,0.02,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-10-03,16,Friday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,0,1,1,1,low,low
+2014-10-03,21,Friday,2014-10-04,09,Saturday,44.22,765.82,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-10-03,22,Friday,2014-10-04,10,Saturday,220.73,751.8,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-10-06,13,Monday,2014-10-06,13,Monday,64.17,0.9,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-10-06,15,Monday,2014-10-06,15,Monday,1574.05,0.02,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-10-06,15,Monday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-10-06,15,Monday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-10-06,15,Monday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-10-06,15,Monday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-10-06,15,Monday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-10-06,15,Monday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-10-06,16,Monday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-10-06,16,Monday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-10-06,16,Monday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-10-06,16,Monday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-10-06,16,Monday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-10-06,16,Monday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-10-07,13,Tuesday,2014-10-07,13,Tuesday,0.58,0.27,jgalipeau,Analyst,local service,0,1,1,1,low,low
+2014-10-07,14,Tuesday,NA,NA,NA,NA,NA,sknapp,Analyst,,1,1,1,1,moderate,moderate
+2014-10-07,14,Tuesday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-10-07,14,Tuesday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-10-07,14,Tuesday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-10-07,14,Tuesday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-10-07,15,Tuesday,NA,NA,NA,NA,NA,sknapp,Analyst,,1,1,1,1,moderate,moderate
+2014-10-07,15,Tuesday,NA,NA,NA,NA,NA,sknapp,Analyst,,1,1,1,1,moderate,moderate
+2014-10-07,15,Tuesday,2014-10-07,17,Tuesday,182.68,105.98,sknapp,Analyst,local service,1,1,1,1,moderate,moderate
+2014-10-07,17,Tuesday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-10-08,11,Wednesday,2014-10-08,11,Wednesday,1.32,1.08,sknapp,Analyst,local service,1,1,1,1,moderate,moderate
+2014-10-08,11,Wednesday,2014-10-08,11,Wednesday,151.53,1.07,sknapp,Analyst,local service,1,1,1,1,moderate,moderate
+2014-10-08,13,Wednesday,2014-10-08,13,Wednesday,1045.35,11.83,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-10-08,16,Wednesday,2014-10-09,07,Thursday,2534.47,909.18,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-10-09,14,Thursday,NA,NA,NA,NA,NA,sknapp,Analyst,,1,1,1,1,moderate,moderate
+2014-10-14,11,Tuesday,2014-10-14,11,Tuesday,1598.4,0.02,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-10-16,14,Thursday,2014-10-16,14,Thursday,0.08,0.02,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-10-16,15,Thursday,2014-10-16,15,Thursday,0.83,0.02,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-10-16,15,Thursday,2014-10-16,15,Thursday,38.02,0.03,jgalipeau,Analyst,local service,0,1,1,1,low,low
+2014-10-16,16,Thursday,2014-10-16,16,Thursday,703.57,0.47,sknapp,Analyst,local service,1,1,1,1,high,high
+2014-10-16,16,Thursday,2014-10-17,04,Friday,444.48,686.18,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-10-17,10,Friday,NA,NA,NA,NA,NA,sknapp,Analyst,,0,1,1,1,high,high
+2014-10-17,11,Friday,NA,NA,NA,NA,NA,sknapp,Analyst,,1,1,1,1,high,high
+2014-10-17,13,Friday,2014-10-17,13,Friday,3489.62,0.57,sknapp,Analyst,local service,1,1,1,1,high,high
+2014-10-17,16,Friday,2014-10-19,23,Sunday,1464.78,3322.62,jgalipeau,Analyst,local service,1,1,1,24,low,low
+2014-10-20,10,Monday,NA,NA,NA,NA,NA,sknapp,Analyst,,1,1,1,1,high,high
+2014-10-20,10,Monday,NA,NA,NA,NA,NA,sknapp,Analyst,,1,1,1,1,high,high
+2014-10-20,11,Monday,NA,NA,NA,NA,NA,sknapp,Analyst,,1,1,1,1,high,high
+2014-10-20,11,Monday,NA,NA,NA,NA,NA,sknapp,Analyst,,1,1,1,1,high,high
+2014-10-20,11,Monday,NA,NA,NA,NA,NA,sknapp,Analyst,,1,1,1,1,high,high
+2014-10-20,11,Monday,NA,NA,NA,NA,NA,sknapp,Analyst,,1,1,1,1,high,high
+2014-10-20,11,Monday,NA,NA,NA,NA,NA,sknapp,Analyst,,1,1,1,1,high,high
+2014-10-20,11,Monday,NA,NA,NA,NA,NA,sknapp,Analyst,,1,1,1,1,high,high
+2014-10-20,11,Monday,NA,NA,NA,NA,NA,sknapp,Analyst,,1,1,1,1,high,high
+2014-10-20,12,Monday,NA,NA,NA,NA,NA,sknapp,Analyst,,1,1,1,1,high,high
+2014-10-20,12,Monday,NA,NA,NA,NA,NA,sknapp,Analyst,,1,1,1,1,high,high
+2014-10-20,16,Monday,2014-10-21,00,Tuesday,3261.73,484.58,sknapp,Analyst,local service,1,1,1,1,high,high
+2014-10-21,14,Tuesday,2014-10-21,14,Tuesday,2.55,0.02,jgalipeau,Analyst,local service,0,1,1,24,low,low
+2014-10-21,15,Tuesday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,24,low,low
+2014-10-21,15,Tuesday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-10-21,16,Tuesday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,24,low,low
+2014-10-22,09,Wednesday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-10-22,11,Wednesday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-10-22,16,Wednesday,NA,NA,NA,NA,NA,sknapp,Analyst,,1,4,1,22,high,high
+2014-10-22,16,Wednesday,NA,NA,NA,NA,NA,sknapp,Analyst,,0,4,1,22,high,high
+2014-10-22,16,Wednesday,NA,NA,NA,NA,NA,sknapp,Analyst,,1,4,1,22,high,high
+2014-10-23,10,Thursday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-10-23,11,Thursday,2014-10-23,11,Thursday,2.67,0.98,sknapp,Analyst,local service,0,4,1,22,high,high
+2014-10-23,13,Thursday,2014-10-23,13,Thursday,2.63,0.97,sknapp,Analyst,local service,0,4,1,22,high,high
+2014-10-23,13,Thursday,2014-10-23,13,Thursday,553.77,0.98,sknapp,Analyst,local service,1,2,1,4,high,high
+2014-10-23,16,Thursday,NA,NA,NA,NA,NA,sknapp,Analyst,,1,4,1,22,high,high
+2014-10-23,16,Thursday,NA,NA,NA,NA,NA,sknapp,Analyst,,1,4,1,22,high,high
+2014-10-23,16,Thursday,NA,NA,NA,NA,NA,sknapp,Analyst,,1,4,1,22,high,high
+2014-10-24,09,Friday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,1,low,low
+2014-10-24,10,Friday,NA,NA,NA,NA,NA,sknapp,Analyst,,1,4,1,22,high,high
+2014-10-24,11,Friday,NA,NA,NA,NA,NA,sknapp,Analyst,,1,4,1,22,high,high
+2014-10-24,11,Friday,2014-10-24,11,Friday,0.45,0.87,sknapp,Analyst,local service,0,2,1,4,high,high
+2014-10-24,11,Friday,2014-10-24,11,Friday,567.32,0.87,sknapp,Analyst,local service,1,2,1,4,high,high
+2014-10-24,12,Friday,2014-10-24,21,Friday,3098.47,563.52,sknapp,Analyst,local service,1,4,1,22,high,high
+2014-10-29,17,Wednesday,2014-10-29,17,Wednesday,77.5,2.98,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-10-29,17,Wednesday,2014-10-29,18,Wednesday,92.0,79.67,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-10-29,17,Wednesday,2014-10-29,19,Wednesday,137.48,168.67,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-10-30,10,Thursday,2014-10-30,11,Thursday,84.08,3.1,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-10-30,14,Thursday,2014-10-30,14,Thursday,95.07,3.13,jgalipeau,Analyst,local service,1,1,1,1,low,low
+2014-11-11,10,Tuesday,2014-11-11,10,Tuesday,2.47,0.4,jgalipeau,Analyst,local service,0,1,1,2,low,low
+2014-11-11,10,Tuesday,2014-11-11,10,Tuesday,480.1,0.38,jgalipeau,Analyst,local service,1,1,1,2,low,low
+2014-11-11,15,Tuesday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,2,1,2,very high,very high
+2014-11-12,11,Wednesday,2014-11-12,11,Wednesday,74.32,0.47,jgalipeau,Analyst,local service,1,1,1,2,low,low
+2014-11-12,11,Wednesday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,2,low,low
+2014-11-12,11,Wednesday,2014-11-12,12,Wednesday,90.72,74.78,jgalipeau,Analyst,local service,1,1,1,2,low,low
+2014-11-12,11,Wednesday,2014-11-12,13,Wednesday,0.03,155.45,jgalipeau,Analyst,local service,1,1,1,2,low,low
+2014-11-12,13,Wednesday,2014-11-12,13,Wednesday,1.6,0.45,jgalipeau,Analyst,local service,1,1,1,2,low,low
+2014-11-12,13,Wednesday,2014-11-12,13,Wednesday,0.02,2.07,jgalipeau,Analyst,local service,1,1,1,2,low,low
+2014-11-12,15,Wednesday,2014-11-12,15,Wednesday,3.67,0.47,jgalipeau,Analyst,local service,1,1,1,2,low,low
+2014-11-12,15,Wednesday,2014-11-12,15,Wednesday,3.65,0.47,jgalipeau,Analyst,local service,1,1,1,2,low,low
+2014-11-12,15,Wednesday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,2,low,low
+2014-11-12,15,Wednesday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,2,low,low
+2014-11-12,15,Wednesday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,2,low,low
+2014-11-12,15,Wednesday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,2,low,low
+2014-11-12,16,Wednesday,2014-11-12,16,Wednesday,31.98,0.47,jgalipeau,Analyst,local service,1,1,1,2,low,low
+2014-11-12,16,Wednesday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,2,low,low
+2014-11-12,16,Wednesday,2014-11-12,16,Wednesday,84.77,10.6,jgalipeau,Analyst,local service,1,1,1,2,low,low
+2014-11-12,16,Wednesday,2014-11-12,17,Wednesday,231.52,95.25,jgalipeau,Analyst,local service,1,1,1,2,low,low
+2014-11-12,16,Wednesday,2014-11-12,21,Wednesday,78.92,325.3,jgalipeau,Analyst,local service,1,1,1,2,low,low
+2014-11-13,08,Thursday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,2,low,low
+2014-11-13,08,Thursday,2014-11-13,08,Thursday,78.97,0.58,jgalipeau,Analyst,local service,1,1,1,2,low,low
+2014-11-13,15,Thursday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,2,low,low
+2014-11-13,15,Thursday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,2,low,low
+2014-11-13,15,Thursday,2014-11-13,15,Thursday,79.05,1.27,jgalipeau,Analyst,local service,1,1,1,2,low,low
+2014-11-13,15,Thursday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,2,low,low
+2014-11-13,16,Thursday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,2,low,low
+2014-11-13,16,Thursday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,2,low,low
+2014-11-13,16,Thursday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,2,low,low
+2014-11-13,16,Thursday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,2,low,low
+2014-11-13,17,Thursday,2014-11-13,17,Thursday,78.98,1.05,jgalipeau,Analyst,local service,1,1,1,2,low,low
+2014-11-13,17,Thursday,2014-11-13,18,Thursday,67.63,70.87,jgalipeau,Analyst,local service,1,1,1,2,low,low
+2014-11-13,17,Thursday,2014-11-13,19,Thursday,73.78,138.52,jgalipeau,Analyst,local service,1,1,1,2,low,low
+2014-11-13,17,Thursday,2014-11-13,21,Thursday,88.4,212.3,jgalipeau,Analyst,local service,1,1,1,2,low,low
+2014-11-14,15,Friday,2014-11-14,15,Friday,95.73,1.33,jgalipeau,Analyst,local service,1,1,1,2,low,low
+2014-11-14,16,Friday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,2,low,low
+2014-11-14,16,Friday,NA,NA,NA,NA,NA,jgalipeau,Analyst,,1,1,1,2,low,low
+2014-11-14,17,Friday,2014-11-14,17,Friday,1306.02,0.38,jgalipeau,Analyst,local service,1,1,1,2,low,low
