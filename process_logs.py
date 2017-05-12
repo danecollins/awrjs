@@ -6,7 +6,7 @@ import time
 from optparse import OptionParser
 
 # my includes
-import jsr
+import js.jsr as jsr
 
 
 usage = """%prog [options] filename

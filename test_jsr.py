@@ -71,65 +71,65 @@ class TestAxiemLog(unittest.TestCase):
 
     def test_get_list(self):
         j = Jobs()
-        j.read_log_file('js/tdata/axiem_success.log')
+        j.read_log_file('tdata/axiem_success.log')
         jobs = j.get_list()
         self.assertEqual(len(jobs), 1)
 
     def test_number_of_events(self):
         j = Jobs()
-        j.read_log_file('js/tdata/axiem_success.log')
+        j.read_log_file('tdata/axiem_success.log')
         self.assertEqual(len(j.timeline), 4)
 
     def test_number_of_jobs(self):
         j = Jobs()
-        j.read_log_file('js/tdata/axiem_success.log')
+        j.read_log_file('tdata/axiem_success.log')
         self.assertEqual(j.number_of_jobs(), 1)
-        j.read_log_file('js/tdata/axiem_fail.log')
+        j.read_log_file('tdata/axiem_fail.log')
         self.assertEqual(j.number_of_jobs(), 2)
-        j.read_log_file('js/tdata/analyst_success.log')
+        j.read_log_file('tdata/analyst_success.log')
         self.assertEqual(j.number_of_jobs(), 3)
 
     def test_jobs_with_duration(self):
         j = Jobs()
-        j.read_log_file('js/tdata/axiem_success.log')
+        j.read_log_file('tdata/axiem_success.log')
         x = j.jobs_with_duration()
         self.assertEqual(len(x), 1)
-        j.read_log_file('js/tdata/axiem_fail.log')
+        j.read_log_file('tdata/axiem_fail.log')
         x = j.jobs_with_duration()
         self.assertEqual(len(x), 2)
 
     def test_success_job_fields(self):
         j = Jobs()
-        j.read_log_file('js/tdata/axiem_success.log')
+        j.read_log_file('tdata/axiem_success.log')
         jd = j.get_list()[0].job
         self.assertEqual(jd['R_MaxProcessors'], '0')
         self.assertEqual(jd['R_MinProcessors'], '1')
         self.assertEqual(jd['R_PreferredMemCap'], 'low')
         self.assertEqual(jd['R_ThreadsPerProcessor'], '1')
-        self.assertEqual(jd['S_User'], 'dcrittenden')
-        self.assertEqual(jd['host'], 'dfw0awrsim01')
+        self.assertEqual(jd['S_User'], 'user1')
+        self.assertEqual(jd['host'], 'xyz0awrsim01')
         self.assertEqual(jd['exit'], '0')
         self.assertEqual(jd['S_Name'], 'AXIEM:5.0')
         self.assertEqual(jd['S_Priority'], '1')
 
     def test_fail_job_fields(self):
         j = Jobs()
-        j.read_log_file('js/tdata/axiem_fail.log')
+        j.read_log_file('tdata/axiem_fail.log')
         jd = j.get_list()[0].job
         self.assertEqual(jd['R_MaxProcessors'], '0')
         self.assertEqual(jd['R_MinProcessors'], '1')
         self.assertEqual(jd['R_PreferredMemCap'], 'low')
         self.assertEqual(jd['R_ThreadsPerProcessor'], '1')
-        self.assertEqual(jd['S_User'], 'rclark')
-        self.assertEqual(jd['host'], 'dfw0awrsim02')
+        self.assertEqual(jd['S_User'], 'user4')
+        self.assertEqual(jd['host'], 'xyz0awrsim02')
         self.assertEqual(jd['exit'], '-2147467259')
         self.assertEqual(jd['S_Name'], 'AXIEM:4.0')
         self.assertEqual(jd['S_Priority'], '1')
 
     def test_multiple_logs(self):
-        j = Jobs('js/tdata/axiem_success.log')
-        j.read_log_file('js/tdata/axiem_fail.log')
-        j.read_log_file('js/tdata/axiem_deque.log')
+        j = Jobs('tdata/axiem_success.log')
+        j.read_log_file('tdata/axiem_fail.log')
+        j.read_log_file('tdata/axiem_deque.log')
         self.assertEqual(j.number_of_jobs(), 3)
         self.assertEqual(len(j.jobs_with_duration()), 2)
 
@@ -137,7 +137,7 @@ class TestAxiemLog(unittest.TestCase):
 class TestDictOutput(unittest.TestCase):
 
     def test_axiem_dict(self):
-        j = Jobs('js/tdata/axiem_success.log')
+        j = Jobs('tdata/axiem_success.log')
         d = {
             u'duration_m': 0.4,
             u'host': u'dfw0awrsim01',
@@ -171,7 +171,7 @@ class TestDictOutput(unittest.TestCase):
                 self.assertEqual(a, b, msg='Match failed on key {}, "{}" != "{}"'.format(item, a, b))
 
     def test_analyst_dict(self):
-        j = Jobs('js/tdata/axiem_success.log')
+        j = Jobs('tdata/axiem_success.log')
         d = {
             u'duration_m': 0.4,
             u'host': u'dfw0awrsim01',
@@ -188,7 +188,7 @@ class TestDictOutput(unittest.TestCase):
             u'submitted_day': 'Wednesday',
             u'submitted_time': '14',
             u'threads': 1,
-            u'user': u'dcrittenden',
+            u'user': u'user1',
             u'wait_m': 0.18,
             u'exit': "0",
             u'working_set': float('nan'),
@@ -207,29 +207,7 @@ class TestDictOutput(unittest.TestCase):
 
 class TestCompleteLog(unittest.TestCase):
 
-    def test_number_of_events(self):
-        j = Jobs()
-        j.read_log_file('js/tdata/combined.log')
-        self.assertEqual(len(j.timeline), 583)
 
-    def test_max_queue(self):
-        j = Jobs()
-        j.read_log_file('js/tdata/combined.log')
-        timeline = j.timeline
-        max_queue = max(x.queued_jobs for x in timeline)
-        self.assertEqual(max_queue, 6)
-
-    def test_max_running(self):
-        j = Jobs()
-        j.read_log_file('js/tdata/combined.log')
-        timeline = j.timeline
-        max_running = max(x.running_jobs for x in timeline)
-        self.assertEqual(max_running, 2)
-
-    def test_get_list(self):
-        j = Jobs()
-        j.read_log_file('js/tdata/combined.log')
-        self.assertEqual(j.number_of_jobs(), 221)
 
 
 if __name__ == '__main__':

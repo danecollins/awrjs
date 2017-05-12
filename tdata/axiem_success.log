@@ -1,0 +1,31 @@
+﻿2014-10-08T14:16:58.0128 - Job 3: Found version 11.02.7015 for task id "AXIEM"
+2014-10-08T14:16:58.0128 - Job 3: Submitted. Name="AXIEM:5.0", User="user1", Priority=1
+2014-10-08T14:16:58.0128 - Job 3: MaxProcessors=0, MinProcessors=1, ThreadsPerProcessor=1, PreferredPerf="low", PreferredMemCap="low".
+2014-10-08T14:16:58.0128 - Job 3: Requesting input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{73DAABD5-AF11-4DD1-B6D2-693CACFCEF75}\AXIEM_Line$13.emi"
+2014-10-08T14:16:58.0128 - Job 3: Prepairing to wait for transfer of input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{73DAABD5-AF11-4DD1-B6D2-693CACFCEF75}\AXIEM_Line$13.emi"
+2014-10-08T14:16:58.0143 - Job 3: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{73DAABD5-AF11-4DD1-B6D2-693CACFCEF75}\AXIEM_Line$13.emi"
+2014-10-08T14:16:58.0143 - Job 3: Requesting input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{73DAABD5-AF11-4DD1-B6D2-693CACFCEF75}\AXIEM_Line$13.opt"
+2014-10-08T14:16:58.0143 - Job 3: Prepairing to wait for transfer of input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{73DAABD5-AF11-4DD1-B6D2-693CACFCEF75}\AXIEM_Line$13.opt"
+2014-10-08T14:16:58.0143 - Job 3: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{73DAABD5-AF11-4DD1-B6D2-693CACFCEF75}\AXIEM_Line$13.opt"
+2014-10-08T14:16:58.0159 - Connection lost for Remote Job Server: xyz0awrsim01.
+2014-10-08T14:16:58.0159 - Sending message JM_JOB_SCHEDULER_TOKENS_CHANGED to consumer AWR_JobScheduler_Local.DFWBCRITTEND01D.7088.xyz0awrsim04
+2014-10-08T14:16:58.0159 - Sending message JM_JOB_SCHEDULER_TOKENS_CHANGED to consumer AWR_JobScheduler_Local.DFWCSANABRIA02L.8792.xyz0awrsim04
+2014-10-08T14:16:58.0159 - Querying Remote Job Server: xyz0awrsim01
+2014-10-08T14:17:08.0159 - Sending message JM_JOB_SCHEDULER_TOKENS_CHANGED to consumer AWR_JobScheduler_Local.DFWBCRITTEND01D.7088.xyz0awrsim04
+2014-10-08T14:17:08.0159 - Sending message JM_JOB_SCHEDULER_TOKENS_CHANGED to consumer AWR_JobScheduler_Local.DFWCSANABRIA02L.8792.xyz0awrsim04
+2014-10-08T14:17:08.0190 - Job 3: assigned AXIEM:5.0 to controller "xyz0awrsim01"
+2014-10-08T14:17:08.0190 - Connected to Remote Job Server: xyz0awrsim01 [Version:11.02.7015 rev1, 64-bit]
+2014-10-08T14:17:08.0206 - Remote Queue xyz0awrsim01: Type=Compute, Performance=very high, Memory Capacity=very high
+2014-10-08T14:17:08.0206 - Registering task id analyst[version:11.02.7015] for server "xyz0awrsim01"
+2014-10-08T14:17:08.0206 - Registering task id AXIEM[version:11.02.7015] for server "xyz0awrsim01"
+2014-10-08T14:17:08.0206 - Registering task id geopr[version:11.02.7015] for server "xyz0awrsim01"
+2014-10-08T14:17:08.0221 - Registering task id grsim[version:11.02.7015] for server "xyz0awrsim01"
+2014-10-08T14:17:08.0221 - Registering task id mpiexec[version:11.02.7015] for server "xyz0awrsim01"
+2014-10-08T14:17:08.0221 - Registering task id MWOffice[version:11.02.7015] for server "xyz0awrsim01"
+2014-10-08T14:17:09.0407 - Job 3: started AXIEM:5.0, procId:0 on controller "xyz0awrsim01"
+2014-10-08T14:17:33.0853 - Job 3: Requesting output file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{73DAABD5-AF11-4DD1-B6D2-693CACFCEF75}\AXIEM_Line.DS13.dsf"
+2014-10-08T14:17:33.0853 - Job 3: Prepairing to wait for transfer of output file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{73DAABD5-AF11-4DD1-B6D2-693CACFCEF75}\AXIEM_Line.DS13.dsf"
+2014-10-08T14:17:33.0869 - Job 3: Transfer complete for output file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{73DAABD5-AF11-4DD1-B6D2-693CACFCEF75}\AXIEM_Line.DS13.dsf"
+2014-10-08T14:17:33.0869 - Job 3: Requesting output file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{73DAABD5-AF11-4DD1-B6D2-693CACFCEF75}\AWR.scheduled_job_data.AXIEM_5.0.7.stderr.txt"
+2014-10-08T14:17:33.0869 - Job 3: Prepairing to wait for transfer of output file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{73DAABD5-AF11-4DD1-B6D2-693CACFCEF75}\AWR.scheduled_job_data.AXIEM_5.0.7.stderr.txt"
+2014-10-08T14:17:33.0869 - Job 3: (AXIEM:5.0) Ended. Exit status: 0

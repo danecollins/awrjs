@@ -1,0 +1,15 @@
+﻿2014-09-22T09:04:36.0898 - Job 5: Found version 11.02.6982 for task id "mpiexec"
+2014-09-22T09:04:36.0929 - Job 5: Submitted. Name="mpiexec:1.0", User="user2", Priority=1
+2014-09-22T09:04:36.0976 - Job 5: MaxProcessors=1, MinProcessors=1, ThreadsPerProcessor=1, PreferredPerf="low", PreferredMemCap="low".
+2014-09-22T09:04:37.0007 - Job 5: Requesting input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{D8D33D75-2188-41AF-BF65-F2160DD579A4}\EM Structure 1$5.emi"
+2014-09-22T09:04:37.0038 - Job 5: Prepairing to wait for transfer of input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{D8D33D75-2188-41AF-BF65-F2160DD579A4}\EM Structure 1$5.emi"
+2014-09-22T09:04:37.0101 - Job 5: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{D8D33D75-2188-41AF-BF65-F2160DD579A4}\EM Structure 1$5.emi"
+2014-09-22T09:04:37.0132 - Job 5: Requesting input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{D8D33D75-2188-41AF-BF65-F2160DD579A4}\EM Structure 1$5.xml"
+2014-09-22T09:04:37.0163 - Job 5: Prepairing to wait for transfer of input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{D8D33D75-2188-41AF-BF65-F2160DD579A4}\EM Structure 1$5.xml"
+2014-09-22T09:04:37.0210 - Job 5: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{D8D33D75-2188-41AF-BF65-F2160DD579A4}\EM Structure 1$5.xml"
+2014-09-22T09:04:37.0272 - Job 5: requesting 1 processors (24 processor reservations available)
+2014-09-22T09:04:37.0319 - Job 5: reserving 1 processors (23 processor reservations remaining)
+2014-09-22T09:04:37.0616 - Job 5: Creating Process C:\Program Files\AWR\Analyst\11\mpiexec.exe  -np 1 -localonly "C:\Program Files\AWR\Analyst\11\grsim.exe" "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{D8D33D75-2188-41AF-BF65-F2160DD579A4}\EM Structure 1$5.xml" /license_key=434936930088528648312820287638984025508
+2014-09-22T09:04:37.0647 - Job 5: started mpiexec:1.0, procId:4796 on controller "local service"
+2014-09-22T09:19:07.0175 - Job 5: releasing 1 processors (processor reservations available before:23, after:24)
+2014-09-22T09:19:07.0206 - Job 5: (mpiexec:1.0) Ended. Exit status: 0

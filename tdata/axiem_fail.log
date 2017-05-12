@@ -1,0 +1,14 @@
+﻿2014-10-09T09:58:56.0821 - Job 34: Found version 11.02.7015 for task id "AXIEM"
+2014-10-09T09:58:56.0852 - Job 34: Submitted. Name="AXIEM:4.0", User="user4", Priority=1
+2014-10-09T09:58:56.0852 - Job 34: MaxProcessors=0, MinProcessors=1, ThreadsPerProcessor=1, PreferredPerf="low", PreferredMemCap="low".
+2014-10-09T09:58:56.0852 - Job 34: Requesting input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{F6427030-6419-4FCC-9199-BFA9E9169318}\INT34 Stackup01enc$27.emi"
+2014-10-09T09:58:56.0852 - Job 34: Prepairing to wait for transfer of input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{F6427030-6419-4FCC-9199-BFA9E9169318}\INT34 Stackup01enc$27.emi"
+2014-10-09T09:58:57.0944 - Job 34: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{F6427030-6419-4FCC-9199-BFA9E9169318}\INT34 Stackup01enc$27.emi"
+2014-10-09T09:58:57.0944 - Job 34: Requesting input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{F6427030-6419-4FCC-9199-BFA9E9169318}\INT34 Stackup01enc$27.opt"
+2014-10-09T09:58:57.0944 - Job 34: Prepairing to wait for transfer of input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{F6427030-6419-4FCC-9199-BFA9E9169318}\INT34 Stackup01enc$27.opt"
+2014-10-09T09:58:57.0991 - Job 34: Transfer complete for input file 
+2014-10-09T11:17:49.0373 - Job 34: assigned AXIEM:4.0 to controller "xyz0awrsim02"
+2014-10-09T11:17:49.0623 - Job 34: started AXIEM:4.0, procId:0 on controller "xyz0awrsim02"
+2014-10-09T17:39:09.0146 - Job 34: Requesting output file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{F6427030-6419-4FCC-9199-BFA9E9169318}\AWR.scheduled_job_data.AXIEM_4.0.5.stderr.txt"
+2014-10-09T17:39:09.0146 - Job 34: Prepairing to wait for transfer of output file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{F6427030-6419-4FCC-9199-BFA9E9169318}\AWR.scheduled_job_data.AXIEM_4.0.5.stderr.txt"
+2014-10-09T17:39:09.0146 - Job 34: (AXIEM:4.0) Ended. Exit status: -2147467259

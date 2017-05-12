@@ -1,0 +1,11 @@
+2014-11-13T14:16:10.0029 - Job 263: Found version 11.02.7015 for task id "AXIEM"
+2014-11-13T14:16:10.0279 - Job 263: Requesting input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{24729E42-DEFF-4074-AC7E-30DBC5BC1C72}\InputManifold_1_6$146.emi"
+2014-11-13T14:16:10.0279 - Job 263: Prepairing to wait for transfer of input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{24729E42-DEFF-4074-AC7E-30DBC5BC1C72}\InputManifold_1_6$146.emi"
+2014-11-13T14:16:10.0294 - Job 263: Submitted. Name="AXIEM:39.0", User="user3", Priority=1
+2014-11-13T14:16:10.0294 - Job 263: MaxProcessors=0, MinProcessors=1, ThreadsPerProcessor=1, PreferredPerf="low", PreferredMemCap="low".
+2014-11-13T14:16:10.0294 - Job 263: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{24729E42-DEFF-4074-AC7E-30DBC5BC1C72}\InputManifold_1_6$146.emi"
+2014-11-13T14:16:10.0294 - Job 263: Requesting input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{24729E42-DEFF-4074-AC7E-30DBC5BC1C72}\InputManifold_1_6$146.opt"
+2014-11-13T14:16:10.0294 - Job 263: Prepairing to wait for transfer of input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{24729E42-DEFF-4074-AC7E-30DBC5BC1C72}\InputManifold_1_6$146.opt"
+2014-11-13T14:16:10.0310 - Job 263: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{24729E42-DEFF-4074-AC7E-30DBC5BC1C72}\InputManifold_1_6$146.opt"
+2014-11-13T14:17:10.0419 - Processing MODIFY_JOB_STATUS(JOB_STATE_CANCEL) for job number 263.
+2014-11-13T14:17:10.0419 - Dequeueing job number 263 (AXIEM:39.0)

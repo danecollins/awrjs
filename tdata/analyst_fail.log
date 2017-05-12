@@ -1,0 +1,73 @@
+﻿2014-10-08T14:17:38.0471 - Job 8: Found version 11.02.7015 for task id "mpiexec"
+2014-10-08T14:17:38.0487 - Job 8: Submitted. Name="mpiexec:10.0", User="user1", Priority=1
+2014-10-08T14:17:38.0502 - Job 8: MaxProcessors=0, MinProcessors=4, ThreadsPerProcessor=1, PreferredPerf="low", PreferredMemCap="low".
+2014-10-08T14:17:38.0518 - Job 8: Requesting input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{71568813-B18D-48E7-97CE-428A313880E1}\Analyst_Line$18.emi"
+2014-10-08T14:17:38.0518 - Job 8: Prepairing to wait for transfer of input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{71568813-B18D-48E7-97CE-428A313880E1}\Analyst_Line$18.emi"
+2014-10-08T14:17:38.0533 - Job 8: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{71568813-B18D-48E7-97CE-428A313880E1}\Analyst_Line$18.emi"
+2014-10-08T14:17:38.0549 - Job 8: Requesting input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{71568813-B18D-48E7-97CE-428A313880E1}\Analyst_Line$18.xml"
+2014-10-08T14:17:38.0565 - Job 8: Prepairing to wait for transfer of input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{71568813-B18D-48E7-97CE-428A313880E1}\Analyst_Line$18.xml"
+2014-10-08T14:17:38.0580 - Job 8: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{71568813-B18D-48E7-97CE-428A313880E1}\Analyst_Line$18.xml"
+2014-10-08T14:17:38.0611 - Job 9: Found version 11.02.7015 for task id "mpiexec"
+2014-10-08T14:17:38.0627 - Job 9: Submitted. Name="mpiexec:11.0", User="user1", Priority=1
+2014-10-08T14:17:38.0705 - Job 9: MaxProcessors=0, MinProcessors=4, ThreadsPerProcessor=1, PreferredPerf="low", PreferredMemCap="low".
+2014-10-08T14:17:38.0705 - Job 9: Requesting input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{51CEDFED-F436-49C1-A5A5-8E186B6A7B14}\Analyst_Line_1$19.emi"
+2014-10-08T14:17:38.0705 - Job 9: Prepairing to wait for transfer of input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{51CEDFED-F436-49C1-A5A5-8E186B6A7B14}\Analyst_Line_1$19.emi"
+2014-10-08T14:17:38.0721 - Job 9: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{51CEDFED-F436-49C1-A5A5-8E186B6A7B14}\Analyst_Line_1$19.emi"
+2014-10-08T14:17:38.0721 - Job 9: Requesting input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{51CEDFED-F436-49C1-A5A5-8E186B6A7B14}\Analyst_Line_1$19.xml"
+2014-10-08T14:17:38.0721 - Job 9: Prepairing to wait for transfer of input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{51CEDFED-F436-49C1-A5A5-8E186B6A7B14}\Analyst_Line_1$19.xml"
+2014-10-08T14:17:38.0721 - Job 9: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{51CEDFED-F436-49C1-A5A5-8E186B6A7B14}\Analyst_Line_1$19.xml"
+2014-10-08T14:17:38.0752 - Job 5: started AXIEM:7.0, procId:0 on controller "xyz0awrsim03"
+2014-10-08T14:17:38.0830 - Job 10: Found version 11.02.7015 for task id "mpiexec"
+2014-10-08T14:17:38.0830 - Job 10: Submitted. Name="mpiexec:12.0", User="user1", Priority=1
+2014-10-08T14:17:38.0830 - Job 10: MaxProcessors=0, MinProcessors=4, ThreadsPerProcessor=1, PreferredPerf="low", PreferredMemCap="low".
+2014-10-08T14:17:38.0845 - Job 5: Requesting output file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{B14E2E7D-8B02-435F-AEF1-EF7E5D0D3838}\AWR.scheduled_job_data.AXIEM_7.0.9.stderr.txt"
+2014-10-08T14:17:38.0845 - Job 5: Prepairing to wait for transfer of output file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{B14E2E7D-8B02-435F-AEF1-EF7E5D0D3838}\AWR.scheduled_job_data.AXIEM_7.0.9.stderr.txt"
+2014-10-08T14:17:38.0845 - Job 5: (AXIEM:7.0) Ended. Exit status: -1073741502
+2014-10-08T14:17:38.0845 - Job 10: Requesting input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{BEF75E71-711A-40B5-967C-030408354472}\Analyst_Line_2$21.emi"
+2014-10-08T14:17:38.0845 - Job 10: Prepairing to wait for transfer of input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{BEF75E71-711A-40B5-967C-030408354472}\Analyst_Line_2$21.emi"
+2014-10-08T14:17:38.0861 - Job 10: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{BEF75E71-711A-40B5-967C-030408354472}\Analyst_Line_2$21.emi"
+2014-10-08T14:17:38.0861 - Job 10: Requesting input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{BEF75E71-711A-40B5-967C-030408354472}\Analyst_Line_2$21.xml"
+2014-10-08T14:17:38.0861 - Job 10: Prepairing to wait for transfer of input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{BEF75E71-711A-40B5-967C-030408354472}\Analyst_Line_2$21.xml"
+2014-10-08T14:17:38.0861 - Job 10: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{BEF75E71-711A-40B5-967C-030408354472}\Analyst_Line_2$21.xml"
+2014-10-08T14:17:38.0877 - Job 6: assigned AXIEM:8.0 to controller "xyz0awrsim03"
+2014-10-08T14:17:38.0955 - Job 11: Found version 11.02.7015 for task id "mpiexec"
+2014-10-08T14:17:38.0970 - Job 11: Submitted. Name="mpiexec:13.0", User="user1", Priority=1
+2014-10-08T14:17:38.0970 - Job 11: MaxProcessors=0, MinProcessors=4, ThreadsPerProcessor=1, PreferredPerf="low", PreferredMemCap="low".
+2014-10-08T14:17:38.0970 - Job 11: Requesting input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{0439F70B-E2B5-4EF0-96CE-948C30D26E61}\Analyst_Line_3$22.emi"
+2014-10-08T14:17:38.0970 - Job 11: Prepairing to wait for transfer of input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{0439F70B-E2B5-4EF0-96CE-948C30D26E61}\Analyst_Line_3$22.emi"
+2014-10-08T14:17:39.0033 - Job 11: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{0439F70B-E2B5-4EF0-96CE-948C30D26E61}\Analyst_Line_3$22.emi"
+2014-10-08T14:17:39.0033 - Job 11: Requesting input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{0439F70B-E2B5-4EF0-96CE-948C30D26E61}\Analyst_Line_3$22.xml"
+2014-10-08T14:17:39.0033 - Job 11: Prepairing to wait for transfer of input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{0439F70B-E2B5-4EF0-96CE-948C30D26E61}\Analyst_Line_3$22.xml"
+2014-10-08T14:17:39.0048 - Job 11: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{0439F70B-E2B5-4EF0-96CE-948C30D26E61}\Analyst_Line_3$22.xml"
+2014-10-08T14:17:39.0079 - Job 6: started AXIEM:8.0, procId:0 on controller "xyz0awrsim03"
+2014-10-08T14:17:39.0095 - Job 6: Requesting output file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{4515DAEF-1909-4CB0-854B-B700644E01FB}\AWR.scheduled_job_data.AXIEM_8.0.10.stderr.txt"
+2014-10-08T14:17:39.0095 - Job 6: Prepairing to wait for transfer of output file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{4515DAEF-1909-4CB0-854B-B700644E01FB}\AWR.scheduled_job_data.AXIEM_8.0.10.stderr.txt"
+2014-10-08T14:17:39.0095 - Job 6: (AXIEM:8.0) Ended. Exit status: -1073741502
+2014-10-08T14:17:39.0142 - Job 7: assigned AXIEM:9.0 to controller "xyz0awrsim03"
+2014-10-08T14:17:39.0282 - Job 12: Found version 11.02.7015 for task id "mpiexec"
+2014-10-08T14:17:39.0298 - Job 12: Submitted. Name="mpiexec:14.0", User="user1", Priority=1
+2014-10-08T14:17:39.0298 - Job 12: MaxProcessors=0, MinProcessors=4, ThreadsPerProcessor=1, PreferredPerf="low", PreferredMemCap="low".
+2014-10-08T14:17:39.0298 - Job 12: Requesting input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{1F831EFF-8F0A-4DBB-B167-078C8D7E7582}\Analyst_Line_4$23.emi"
+2014-10-08T14:17:39.0298 - Job 12: Prepairing to wait for transfer of input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{1F831EFF-8F0A-4DBB-B167-078C8D7E7582}\Analyst_Line_4$23.emi"
+2014-10-08T14:17:39.0313 - Job 12: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{1F831EFF-8F0A-4DBB-B167-078C8D7E7582}\Analyst_Line_4$23.emi"
+2014-10-08T14:17:39.0313 - Job 12: Requesting input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{1F831EFF-8F0A-4DBB-B167-078C8D7E7582}\Analyst_Line_4$23.xml"
+2014-10-08T14:17:39.0313 - Job 12: Prepairing to wait for transfer of input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{1F831EFF-8F0A-4DBB-B167-078C8D7E7582}\Analyst_Line_4$23.xml"
+2014-10-08T14:17:39.0313 - Job 12: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{1F831EFF-8F0A-4DBB-B167-078C8D7E7582}\Analyst_Line_4$23.xml"
+2014-10-08T14:17:39.0345 - Job 7: started AXIEM:9.0, procId:0 on controller "xyz0awrsim03"
+2014-10-08T14:17:39.0360 - Job 7: Requesting output file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{7C8F8415-4A1F-462C-AC0E-4C81817CD686}\AWR.scheduled_job_data.AXIEM_9.0.11.stderr.txt"
+2014-10-08T14:17:39.0360 - Job 7: Prepairing to wait for transfer of output file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{7C8F8415-4A1F-462C-AC0E-4C81817CD686}\AWR.scheduled_job_data.AXIEM_9.0.11.stderr.txt"
+2014-10-08T14:17:39.0360 - Job 7: (AXIEM:9.0) Ended. Exit status: -1073741502
+2014-10-08T14:17:39.0407 - Job 8: assigned mpiexec:10.0 to controller "xyz0awrsim03"
+2014-10-08T14:17:39.0454 - Job 13: Found version 11.02.7015 for task id "mpiexec"
+2014-10-08T14:17:39.0469 - Job 13: Submitted. Name="mpiexec:15.0", User="user1", Priority=1
+2014-10-08T14:17:39.0469 - Job 13: MaxProcessors=0, MinProcessors=4, ThreadsPerProcessor=1, PreferredPerf="low", PreferredMemCap="low".
+2014-10-08T14:17:39.0469 - Job 13: Requesting input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{973A0CDF-34F1-4BA5-A026-0348804930AD}\Analyst_Line_5$24.emi"
+2014-10-08T14:17:39.0469 - Job 13: Prepairing to wait for transfer of input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{973A0CDF-34F1-4BA5-A026-0348804930AD}\Analyst_Line_5$24.emi"
+2014-10-08T14:17:39.0563 - Job 13: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{973A0CDF-34F1-4BA5-A026-0348804930AD}\Analyst_Line_5$24.emi"
+2014-10-08T14:17:39.0563 - Job 13: Requesting input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{973A0CDF-34F1-4BA5-A026-0348804930AD}\Analyst_Line_5$24.xml"
+2014-10-08T14:17:39.0563 - Job 13: Prepairing to wait for transfer of input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{973A0CDF-34F1-4BA5-A026-0348804930AD}\Analyst_Line_5$24.xml"
+2014-10-08T14:17:39.0579 - Job 13: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{973A0CDF-34F1-4BA5-A026-0348804930AD}\Analyst_Line_5$24.xml"
+2014-10-08T14:17:39.0735 - Job 8: started mpiexec:10.0, procId:0 on controller "xyz0awrsim03"
+2014-10-08T14:17:39.0750 - Job 8: Requesting output file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{71568813-B18D-48E7-97CE-428A313880E1}\AWR.scheduled_job_data.mpiexec_10.0.12.stderr.txt"
+2014-10-08T14:17:39.0750 - Job 8: Prepairing to wait for transfer of output file "C:\ProgramData\AWR\Design Environment\11.0\temp\awr_job_data\{71568813-B18D-48E7-97CE-428A313880E1}\AWR.scheduled_job_data.mpiexec_10.0.12.stderr.txt"
+2014-10-08T14:17:39.0750 - Job 8: (mpiexec:10.0) Ended. Exit status: -1073741502
