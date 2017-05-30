@@ -28,33 +28,3 @@
 2016-11-10T19:22:45.0202 - Job 1: Output File sent; 0 remaining.
 2016-11-10T19:22:45.0857 - Job 1: File requested by remote queue AWR_JobScheduler_Local_slate_John.sim3d: "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{AFC35CB7-5C48-477C-BF63-723EBE869560}\AWR.scheduled_job_data.AXIEM_109362876.1.1.stderr.txt"
 2016-11-10T19:22:45.0857 - Job 1: Output File send failed; 0 remaining. Error: Can not open outgoing file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{AFC35CB7-5C48-477C-BF63-723EBE869560}\AWR.scheduled_job_data.AXIEM_109362876.1.1.stderr.txt". OS error: No such process
-2016-11-28T08:46:06.0173 - Job 1: Found version 12.04.7721 for task id "AXIEM"
-2016-11-28T08:46:06.0173 - Job 1: Submitted. Name="AXIEM:1.1", User="cbean", Priority=1, UniqueID={F1205AD4-0003-438F-9001-86B335F49148}
-2016-11-28T08:46:06.0173 - Job 1: JobPreProcessor: Accepted job for client cbean:CHRISTIAN2-LT.
-2016-11-28T08:46:06.0173 - Job 1: Requesting input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1205AD4-0003-438F-9001-86B335F49148}\EM Structure 1$1%0.emi"
-2016-11-28T08:46:06.0173 - Job 1: Requesting input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1205AD4-0003-438F-9001-86B335F49148}\EM Structure 1$1%0.opt"
-2016-11-28T08:46:06.0173 - Job 1: MaxProcessors=4, MinProcessors=1, ThreadsPerProcessor=1, PreferredPerf="normal", PreferredMemCap="normal", NodeExclusive=false.
-2016-11-28T08:46:07.0187 - Job 1: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1205AD4-0003-438F-9001-86B335F49148}\EM Structure 1$1%0.emi"
-2016-11-28T08:46:08.0263 - Job 1: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1205AD4-0003-438F-9001-86B335F49148}\EM Structure 1$1%0.opt"
-2016-11-28T08:46:08.0263 - Job 1: Transfer complete for all input files. Triggering license check.
-2016-11-28T08:46:09.0293 - Job 1: File requested by remote queue AWR_JobScheduler.compute_node: "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1205AD4-0003-438F-9001-86B335F49148}\EM Structure 1$1%0.emi"
-2016-11-28T08:46:09.0293 - Job 1: Transfer started for outgoing input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1205AD4-0003-438F-9001-86B335F49148}\EM Structure 1$1%0.emi".
-2016-11-28T08:46:09.0293 - Job 1: Transfer complete for outgoing input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1205AD4-0003-438F-9001-86B335F49148}\EM Structure 1$1%0.emi".
-2016-11-28T08:46:09.0417 - Job 1: File requested by remote queue AWR_JobScheduler.compute_node: "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1205AD4-0003-438F-9001-86B335F49148}\EM Structure 1$1%0.opt"
-2016-11-28T08:46:09.0417 - Job 1: Transfer started for outgoing input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1205AD4-0003-438F-9001-86B335F49148}\EM Structure 1$1%0.opt".
-2016-11-28T08:46:09.0417 - Job 1: Transfer complete for outgoing input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1205AD4-0003-438F-9001-86B335F49148}\EM Structure 1$1%0.opt".
-2016-11-28T08:46:09.0542 - Job 1: assigned AXIEM:1.1 to controller "sim1a"
-2016-11-28T08:46:09.0792 - Job 1: All files reported received by remote server sim1a.
-2016-11-28T08:46:10.0821 - Job 1: started AXIEM:1.1, procId:0 on controller "sim1a"
-2016-11-28T08:46:27.0124 - Job 1: (AXIEM:1.1) Ended. Exit status: 0
-2016-11-28T08:46:27.0124 - Job 1: peak working set = 96583680.
-2016-11-28T08:46:27.0155 - Job 1: Requesting output file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1205AD4-0003-438F-9001-86B335F49148}\EM Structure 1.DS1.dsf.0"
-2016-11-28T08:46:27.0155 - Job 1: Preparing to wait for transfer of output file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1205AD4-0003-438F-9001-86B335F49148}\EM Structure 1.DS1.dsf.0"
-2016-11-28T08:46:27.0919 - Job 1: Transfer complete for output file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1205AD4-0003-438F-9001-86B335F49148}\EM Structure 1.DS1.dsf.0"
-2016-11-28T08:46:27.0919 - Job 1: Requesting output file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1205AD4-0003-438F-9001-86B335F49148}\AWR.scheduled_job_data.AXIEM_1.1.1.stderr.txt"
-2016-11-28T08:46:27.0919 - Job 1: Preparing to wait for transfer of output file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1205AD4-0003-438F-9001-86B335F49148}\AWR.scheduled_job_data.AXIEM_1.1.1.stderr.txt"
-2016-11-28T08:46:28.0262 - Job 1: (AXIEM:1.1) Complete.
-2016-11-28T08:46:28.0996 - Job 1: File requested by remote queue AWR_JobScheduler_Local_CHRISTIAN2-LT_cbean.sim3d: "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1205AD4-0003-438F-9001-86B335F49148}\EM Structure 1.DS1.dsf.0"
-2016-11-28T08:46:28.0996 - Job 1: Output File sent; 0 remaining.
-2016-11-28T08:46:30.0540 - Job 1: File requested by remote queue AWR_JobScheduler_Local_CHRISTIAN2-LT_cbean.sim3d: "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1205AD4-0003-438F-9001-86B335F49148}\AWR.scheduled_job_data.AXIEM_1.1.1.stderr.txt"
-2016-11-28T08:46:30.0540 - Job 1: Output File send failed; 0 remaining. Error: Can not open outgoing file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1205AD4-0003-438F-9001-86B335F49148}\AWR.scheduled_job_data.AXIEM_1.1.1.stderr.txt". OS error: No such process

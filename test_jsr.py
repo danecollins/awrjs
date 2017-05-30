@@ -3,6 +3,7 @@ from js.jsr import interval2string_m, elapsed2string, time2tuple, match
 
 import math
 import time
+import os
 
 
 def test_match():
@@ -11,8 +12,8 @@ def test_match():
 
 
 def test_elapsed2string():
-    assert elapsed2string(4200) == u'70.0 min. / 1.17 hr.'
-    assert elapsed2string(4200.0) == u'70.0 min. / 1.17 hr.'
+    assert elapsed2string(4200) == '70.0 min. / 1.17 hr.'
+    assert elapsed2string(4200.0) == '70.0 min. / 1.17 hr.'
 
 
 def test_interval2string_m():
@@ -33,6 +34,7 @@ started_msg = '2014-11-13T09:09:10.0581 - Job 254: started AXIEM:33.0, procId:0 
 controller "dfw0awrsim01"'
 
 
+# Legacy tests
 def test_parse_job_message():
     j = Job()
     (time, num, cmd) = j.parse_job_message(submit_msg)
@@ -136,79 +138,256 @@ def test_multiple_logs():
     assert len(j.jobs_with_duration()) == 2
 
 
-def test_axiem_dict():
-    j = Jobs('tdata/axiem_success.log')
-    d = {
-        u'duration_m': 0.4,
-        u'host': u'xyz0awrsim01',
-        u'max_proc': 0,
-        u'min_proc': 1,
-        u'priotiry': 1,
-        u'req_mem': u'low',
-        u'req_perf': u'low',
-        u'simulator': u'AXIEM',
-        u'start_date': '2014-10-08',
-        u'start_day': 'Wednesday',
-        u'start_time': '14',
-        u'submitted_date': '2014-10-08',
-        u'submitted_day': 'Wednesday',
-        u'submitted_time': '14',
-        u'threads': 1,
-        u'user': u'user1',
-        u'wait_m': 0.18,
-        u'exit': u'0',
-        u'files_remaining': float('nan'),
-        u'working_set': float('nan'),
-        u'results_copy_m': float('nan'),
-    }
-    l = j.get_list()
-    result = l[0].job2dict()
-
-    for item in sorted(set(result.keys()) | set(d.keys())):
-        a = result.get(item, 'missing')
-        b = d.get(item, 'missing')
-        if not (isinstance(a, float) and isinstance(b, float) and math.isnan(a) and math.isnan(b)):
-            assert a == b, 'Match failed on key {}, "{}" != "{}"'.format(item, a, b)
-
-
-def test_analyst_dict():
-    j = Jobs('tdata/axiem_success.log')
-    d = {
-        u'duration_m': 0.4,
-        u'host': u'xyz0awrsim01',
-        u'max_proc': 0,
-        u'min_proc': 1,
-        u'priotiry': 1,
-        u'req_mem': u'low',
-        u'req_perf': u'low',
-        u'simulator': u'AXIEM',
-        u'start_date': '2014-10-08',
-        u'start_day': 'Wednesday',
-        u'start_time': '14',
-        u'submitted_date': '2014-10-08',
-        u'submitted_day': 'Wednesday',
-        u'submitted_time': '14',
-        u'threads': 1,
-        u'user': u'user1',
-        u'wait_m': 0.18,
-        u'exit': "0",
-        u'working_set': float('nan'),
-        u'files_remaining': float('nan'),
-        u'results_copy_m': float('nan'),
-    }
-    l = j.get_list()
-    result = l[0].job2dict()
-
-    for item in sorted(set(result.keys()) | set(d.keys())):
-        a = result.get(item, 'missing')
-        b = d.get(item, 'missing')
-        if not (isinstance(a, float) and isinstance(b, float) and math.isnan(a) and math.isnan(b)):
-            assert a == b, 'Match failed on key {}, "{}" != "{}"'.format(item, a, b)
-
-
 def test_aggregate_stats():
     j = Jobs('tdata/awr_jobs_2016.txt')
     assert j.number_of_jobs() == 22
     assert j.first_job_at() == 1481566425.0794
     assert j.last_job_at() == 1481825588.0556
     assert len(j.jobs_with_duration()) == 17
+
+
+# # Tests on files with one complete job #####################
+def compare_dict(standard, job_dict):
+    for item in sorted(set(job_dict.keys()) | set(standard.keys())):
+        a = job_dict.get(item, 'key "{}" is missing from job'.format(item))
+        b = standard.get(item, 'key "{}" is missing from standard'.format(item))
+        if not (isinstance(a, float) and isinstance(b, float) and math.isnan(a) and math.isnan(b)):
+            assert a == b, 'Match failed on key {}, "{}" != "{}"'.format(item, a, b)
+
+
+# ## AXIEM
+def test_axiem_v11_success_dict():
+    j = Jobs('tdata/axiem_success.log')
+    d = {
+        'duration_m': 0.4,
+        'host': 'xyz0awrsim01',
+        'max_proc': 0,
+        'min_proc': 1,
+        'priotiry': 1,
+        'req_mem': 'low',
+        'req_perf': 'low',
+        'simulator': 'AXIEM',
+        'start_date': '2014-10-08',
+        'start_day': 'Wednesday',
+        'start_time': '14',
+        'submitted_date': '2014-10-08',
+        'submitted_day': 'Wednesday',
+        'submitted_time': '14',
+        'threads': 1,
+        'user': 'user1',
+        'wait_m': 0.18,
+        'exit': '0',
+        'files_remaining': float('nan'),
+        'working_set': float('nan'),
+        'results_copy_m': float('nan'),
+    }
+    l = j.get_list()
+    result = l[0].job2dict()
+    compare_dict(d, result)
+
+
+def test_axiem_v12_success_dict():
+    assert os.path.exists('tdata/v12_xem_success.txt'), 'Test file is missing'
+    j = Jobs('tdata/v12_xem_success.txt')
+    d = {
+        'duration_m': 0.28,
+        'host': 'sim1a',
+        'max_proc': 4,
+        'min_proc': 1,
+        'priotiry': 1,
+        'req_mem': 'normal',
+        'req_perf': 'normal',
+        'simulator': 'AXIEM',
+        'start_date': '2016-11-28',
+        'start_day': 'Monday',
+        'start_time': '08',
+        'submitted_date': '2016-11-28',
+        'submitted_day': 'Monday',
+        'submitted_time': '08',
+        'threads': 1,
+        'user': 'cbean',
+        'wait_m': 0.07,
+        'exit': '0',
+        'files_remaining': float('nan'),
+        'working_set': 92,
+        'results_copy_m': float('nan'),
+    }
+    job = j.get_list()[0]
+    result = job.job2dict()
+    compare_dict(d, result)
+
+    # uuid is internal only so test it separately
+    assert '{F1205AD4-0003-438F-9001-86B335F49148}' == job.job['S_UniqueID']
+
+
+def test_axiem_v13_success_dict():
+    assert os.path.exists('tdata/v13_xem_success.txt'), 'Test file is missing'
+    j = Jobs('tdata/v13_xem_success.txt')
+    d = {
+        'duration_m': 0.23,
+        'host': 'sim1a',
+        'max_proc': 4,
+        'min_proc': 1,
+        'priotiry': 1,
+        'req_mem': 'normal',
+        'req_perf': 'normal',
+        'simulator': 'AXIEM',
+        'start_date': '2016-11-10',
+        'start_day': 'Thursday',
+        'start_time': '19',
+        'submitted_date': '2016-11-10',
+        'submitted_day': 'Thursday',
+        'submitted_time': '19',
+        'threads': 1,
+        'user': 'John',
+        'wait_m': 0.05,
+        'exit': '0',
+        'files_remaining': float('nan'),
+        'working_set': 132,
+        'results_copy_m': float('nan'),
+    }
+    job = j.get_list()[0]
+    result = job.job2dict()
+    compare_dict(d, result)
+
+    # uuid is internal only so test it separately
+    assert '{AFC35CB7-5C48-477C-BF63-723EBE869560}' == job.job['S_UniqueID']
+
+
+def test_axiem_v14_success_dict():
+    assert os.path.exists('tdata/v14_xem_success.txt'), 'Test file is missing'
+    j = Jobs('tdata/v14_xem_success.txt')
+    d = {
+        'duration_m': 3.7,
+        'host': 'local service',
+        'max_proc': 8,
+        'min_proc': 1,
+        'priotiry': 1,
+        'req_mem': 'normal',
+        'req_perf': 'normal',
+        'simulator': 'AXIEM',
+        'start_date': '2017-05-30',
+        'start_day': 'Tuesday',
+        'start_time': '15',
+        'submitted_date': '2017-05-30',
+        'submitted_day': 'Tuesday',
+        'submitted_time': '15',
+        'threads': 1,
+        'user': 'mshattuc',
+        'wait_m': 0.02,
+        'exit': '0',
+        'files_remaining': float('nan'),
+        'working_set': 3159,
+        'results_copy_m': float('nan'),
+    }
+    job = j.get_list()[0]
+    result = job.job2dict()
+    compare_dict(d, result)
+
+    # uuid is internal only so test it separately
+    assert '{358E9E3E-0D8D-4DB4-B89B-5B0540120C6F}' == job.job['S_UniqueID']
+
+
+# ## Analyst
+def test_analyst_v11_dict():
+    j = Jobs('tdata/axiem_success.log')
+    d = {
+        'duration_m': 0.4,
+        'host': 'xyz0awrsim01',
+        'max_proc': 0,
+        'min_proc': 1,
+        'priotiry': 1,
+        'req_mem': 'low',
+        'req_perf': 'low',
+        'simulator': 'AXIEM',
+        'start_date': '2014-10-08',
+        'start_day': 'Wednesday',
+        'start_time': '14',
+        'submitted_date': '2014-10-08',
+        'submitted_day': 'Wednesday',
+        'submitted_time': '14',
+        'threads': 1,
+        'user': 'user1',
+        'wait_m': 0.18,
+        'exit': "0",
+        'working_set': float('nan'),
+        'files_remaining': float('nan'),
+        'results_copy_m': float('nan'),
+    }
+    l = j.get_list()
+    result = l[0].job2dict()
+    compare_dict(d, result)
+
+
+def test_analyst_v12_dict():
+    # v12 adds working_set parameter and uuid
+    assert os.path.exists('tdata/v12_ana_success.txt'), 'Test file is missing'
+    j = Jobs('tdata/v12_ana_success.txt')
+    d = {
+        'duration_m': 31.92,
+        'host': 'local service',
+        'max_proc': 1,
+        'min_proc': 1,
+        'priotiry': 1,
+        'req_mem': 'normal',
+        'req_perf': 'normal',
+        'simulator': 'Analyst',
+        'start_date': '2016-04-20',
+        'start_day': 'Wednesday',
+        'start_time': '11',
+        'submitted_date': '2016-04-20',
+        'submitted_day': 'Wednesday',
+        'submitted_time': '11',
+        'threads': 1,
+        'user': 'cbean',
+        'wait_m': 0.0,
+        'exit': "0",
+        'working_set': 3838,
+        'files_remaining': float('nan'),
+        'results_copy_m': float('nan'),
+    }
+    job = j.get_list()[0]
+    result = job.job2dict()
+    compare_dict(d, result)
+    assert '{40981585-0E57-4E92-9000-0379C1EBD733}' == job.job['S_UniqueID']
+
+# def test_analyst_v13_success_dict():
+#     assert os.path.exists('tdata/v13_ana_success.txt'), 'Test file is missing'
+#     j = Jobs('tdata/v13_ana_success.txt')
+
+
+# def test_analyst_v14_success_dict():
+#     assert os.path.exists('tdata/v14_ana_success.txt'), 'Test file is missing'
+#     j = Jobs('tdata/v14_ana_success.txt')
+
+
+def test_analyst_v14_cancel_dict():
+    assert os.path.exists('tdata/v14_ana_cancel.txt'), 'Test file is missing'
+    j = Jobs('tdata/v14_ana_cancel.txt')
+    d = {
+        'duration_m': 0.23,
+        'host': 'local service',
+        'max_proc': 4,
+        'min_proc': 1,
+        'priotiry': 1,
+        'req_mem': 'normal',
+        'req_perf': 'normal',
+        'simulator': 'Analyst',
+        'start_date': '2017-05-03',
+        'start_day': 'Wednesday',
+        'start_time': '01',
+        'submitted_date': '2017-05-03',
+        'submitted_day': 'Wednesday',
+        'submitted_time': '01',
+        'threads': 1,
+        'user': 'sylin',
+        'wait_m': 0.02,
+        'exit': "cancelled",
+        'working_set': 351,
+        'files_remaining': float('nan'),
+        'results_copy_m': float('nan'),
+    }
+    job = j.get_list()[0]
+    result = job.job2dict()
+    compare_dict(d, result)
+    assert '{9E0BDFC8-D442-46D4-BC94-380BFEDF0432}' == job.job['S_UniqueID']

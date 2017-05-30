@@ -16,6 +16,7 @@
 2016-11-28T08:46:09.0417 - Job 1: Transfer complete for outgoing input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1205AD4-0003-438F-9001-86B335F49148}\EM Structure 1$1%0.opt".
 2016-11-28T08:46:09.0542 - Job 1: assigned AXIEM:1.1 to controller "sim1a"
 2016-11-28T08:46:09.0792 - Job 1: All files reported received by remote server sim1a.
+2016-11-28T08:46:10.0821 - Job 1: started AXIEM:1.1, procId:0 on controller "sim1a"
 2016-11-28T08:46:27.0124 - Job 1: (AXIEM:1.1) Ended. Exit status: 0
 2016-11-28T08:46:27.0124 - Job 1: peak working set = 96583680.
 2016-11-28T08:46:27.0155 - Job 1: Requesting output file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1205AD4-0003-438F-9001-86B335F49148}\EM Structure 1.DS1.dsf.0"
@@ -24,8 +25,6 @@
 2016-11-28T08:46:27.0919 - Job 1: Requesting output file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1205AD4-0003-438F-9001-86B335F49148}\AWR.scheduled_job_data.AXIEM_1.1.1.stderr.txt"
 2016-11-28T08:46:27.0919 - Job 1: Preparing to wait for transfer of output file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1205AD4-0003-438F-9001-86B335F49148}\AWR.scheduled_job_data.AXIEM_1.1.1.stderr.txt"
 2016-11-28T08:46:28.0262 - Job 1: (AXIEM:1.1) Complete.
-2016-11-28T08:46:28.0886 - Job 2: File requested by remote queue AWR_JobScheduler_Local_CHRISTIAN2-LT_cbean.sim3d: "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{7B2D44F9-D138-4027-A443-DDB57E766DE5}\AWR.scheduled_job_data.AXIEM_1.2.2.stderr.txt"
-2016-11-28T08:46:28.0886 - Job 2: Output File send failed; 0 remaining. Error: Can not open outgoing file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{7B2D44F9-D138-4027-A443-DDB57E766DE5}\AWR.scheduled_job_data.AXIEM_1.2.2.stderr.txt". OS error: No such process
 2016-11-28T08:46:28.0996 - Job 1: File requested by remote queue AWR_JobScheduler_Local_CHRISTIAN2-LT_cbean.sim3d: "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1205AD4-0003-438F-9001-86B335F49148}\EM Structure 1.DS1.dsf.0"
 2016-11-28T08:46:28.0996 - Job 1: Output File sent; 0 remaining.
 2016-11-28T08:46:30.0540 - Job 1: File requested by remote queue AWR_JobScheduler_Local_CHRISTIAN2-LT_cbean.sim3d: "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1205AD4-0003-438F-9001-86B335F49148}\AWR.scheduled_job_data.AXIEM_1.1.1.stderr.txt"
