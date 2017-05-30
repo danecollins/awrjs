@@ -141,6 +141,8 @@ def timestamp2float(ts: str) -> float:
 
 def to_int_or_na(i):
     """Convert string to int"""
+    if isinstance(i, float):
+        return int(round(i, 0))
     try:
         return int(i)
     except ValueError:
@@ -419,6 +421,11 @@ class Jobs:
                     j.cancelled(line)
                 elif match(line, 'Dequeueing scheduled job'):  # v12 dequeue different from v11
                     job_number = jobre.search(line).group()[6:-1]  # del  -Job and :
+                    j = self.__find_by_number(job_number, lineno)
+                    j.cancelled(line)
+                elif match(line, 'Setting job to CANCELING state'):
+                    job_number = jobre.search(line).group()[6:-1]
+                    print('job number is', job_number)
                     j = self.__find_by_number(job_number, lineno)
                     j.cancelled(line)
                 elif match(line, 'Terminating job'):  # 2016-....0468 - Terminating job number 26 (mpiexec:2.2)
@@ -718,7 +725,12 @@ class Job:
         # 2015-03-03T16:49:10.0093 - Job 97: peak working set = 4546879488.
         (message_time, job_number, command) = self.parse_job_message(message)
         size = command[command.find('=') + 2:-1]  # from equal to before period
-        size = int(size) / 1024 / 1024  # convert to MB
+        if "MB" in size:
+            size = float(size[:-2])
+        elif "GB" in size:
+            size = float(size[:-2]) * 1024
+        else:
+            size = int(size) / 1024 / 1024  # convert to MB
         self.job['working_set'] = size
 
     def releasing(self, message):
@@ -795,10 +807,12 @@ class Job:
             del running_hosts[self.job['host']]
 
         # need to check whether job has already see other exist status message
-        if self.job['exit']:
+        if self.job['exit'] and self.job['start'] and self.job['duration']:
             return
 
-        self.job['exit'] = command.split('exit code ')[1][:-1]  # extract numerical exit status
+        if self.job.get('exit') != 'cancelled':
+            # cancelled precedes the exit code as it is a more useful message
+            self.job['exit'] = command.split('exit code ')[1][:-1]  # extract numerical exit status
         if self.duration() == '':
             if self.job['start'] != '':
                 self.job['stop'] = message_time
