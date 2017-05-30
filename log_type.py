@@ -19,6 +19,10 @@ parser.add_option("-l", "--long",
 # options will be a dict of the options
 (options, args) = parser.parse_args()
 
+if len(args) == 0:
+    parser.print_help()
+    exit(0)
+
 p_local = re.compile('Started By')
 p_override = re.compile('Queue Type Override set to: "(.*)"')
 # p_local2 = re.compile('Remote Queue.*Type=Scheduler')
@@ -38,8 +42,16 @@ for file in args:
     compute = False
     override = False
     typ = False
+    cnt = 0
+    min_date = '2099-12-31'
+    max_date = '2000-01-01'
     for l in lines:
+        cnt += 1
         l = l.strip()
+        if (len(l) > 10) and (l[4] == '-'):
+            timestamp = l[:10]
+            min_date = min(min_date, timestamp)
+            max_date = max(max_date, timestamp)
         if not scheduler:
             if p_scheduler.search(l):
                 scheduler = l
@@ -55,7 +67,7 @@ for file in args:
                 print('ERROR: Log changed type override from {} to {}'.format(typ, tmp))
             if tmp != 'Automatic':
                 typ = tmp
-                override = l
+                override = tmp + ' (via override)'
 
     if options.debug:
         print(file)
@@ -95,4 +107,4 @@ for file in args:
         log_type = 'local'
     elif override:
         log_type = override
-    print(log_type)
+    print('type = {}, {:,} lines from {} to {}'.format(log_type, cnt, min_date, max_date))
