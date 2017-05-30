@@ -1,0 +1,33 @@
+2017-05-26T09:15:03.389 - Job 1: Found version 14.00.8754 for task id "mpiexec"
+2017-05-26T09:15:03.389 - Job 1: Submitted. Name="mpiexec:2208881.3", User="sylin", Priority=1, UniqueID={5151B0B3-20B2-4DA8-9992-3BFADCBF9E65}
+2017-05-26T09:15:03.389 - Job 1: Successfully created network share for working directory C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{5151B0B3-20B2-4DA8-9992-3BFADCBF9E65}
+2017-05-26T09:15:03.389 - Job 1: Requesting input file "C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{5151B0B3-20B2-4DA8-9992-3BFADCBF9E65}\Patch$0%2.emi"
+2017-05-26T09:15:03.389 - Job 1: Requesting input file "C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{5151B0B3-20B2-4DA8-9992-3BFADCBF9E65}\Patch$0%2.xml"
+2017-05-26T09:15:03.389 - Job 1: Requesting input file "C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{5151B0B3-20B2-4DA8-9992-3BFADCBF9E65}\Patch$0%2.opt"
+2017-05-26T09:15:03.389 - Job 1: MaxProcessors=4, MinProcessors=1, ThreadsPerProcessor=1, PreferredPerf="normal", PreferredMemCap="normal", NodeExclusive=false.
+2017-05-26T09:15:03.498 - Job 1: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{5151B0B3-20B2-4DA8-9992-3BFADCBF9E65}\Patch$0%2.emi"
+2017-05-26T09:15:03.498 - Unexpected message id received: 304
+2017-05-26T09:15:03.607 - Job 1: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{5151B0B3-20B2-4DA8-9992-3BFADCBF9E65}\Patch$0%2.xml"
+2017-05-26T09:15:03.717 - Job 1: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{5151B0B3-20B2-4DA8-9992-3BFADCBF9E65}\Patch$0%2.opt"
+2017-05-26T09:15:03.717 - Job 1: Transfer complete for all input files. Triggering license check.
+2017-05-26T09:15:03.717 - Job 1: requesting 4 cores (4 core reservations available)
+2017-05-26T09:15:03.717 - Job 1: reserving 4 cores (0 core reservations remaining)
+2017-05-26T09:15:03.873 - Job 1: License feature "TOK_100" checked out.
+2017-05-26T09:15:03.888 - Job 1: Setting max memory limit to 61.941GB
+2017-05-26T09:15:03.888 - Job 1: Working Directory = C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{5151B0B3-20B2-4DA8-9992-3BFADCBF9E65}
+2017-05-26T09:15:03.888 - Job 1: Creating Process "C:\Program Files\AWR\V14\mpiexec.exe"  -verbose -np 4 -localonly "C:\Program Files\AWR\V14\grsim.exe" "C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{5151B0B3-20B2-4DA8-9992-3BFADCBF9E65}\Patch$0%2.xml" /nt=1 /license_key=297824172380500757276715507998764026204 /dspath="C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{5151B0B3-20B2-4DA8-9992-3BFADCBF9E65}"
+2017-05-26T09:15:03.888 - Job 1: Process creation successful
+2017-05-26T09:15:03.888 - Job 1: started mpiexec:2208881.3, procId:5052 on controller "local service"
+2017-05-26T09:16:23.839 - Processing MODIFY_JOB_STATUS(JOB_STATE_CANCEL) for job number 1.
+2017-05-26T09:16:23.839 - Terminating job number 1 (mpiexec:2208881.3)
+2017-05-26T09:16:23.839 - Job 1: Child process 1768 ("C:\Program Files\AWR\V14\pmi_proxy.exe") is still running.
+2017-05-26T09:16:23.839 - Job 1: Child process 4364 ("C:\Program Files\AWR\V14\grsim.exe") is still running.
+2017-05-26T09:16:23.839 - Job 1: Child process 5032 ("C:\Program Files\AWR\V14\grsim.exe") is still running.
+2017-05-26T09:16:23.839 - Job 1: Child process 5124 ("C:\Program Files\AWR\V14\grsim.exe") is still running.
+2017-05-26T09:16:23.839 - Job 1: Child process 6132 ("C:\Program Files\AWR\V14\grsim.exe") is still running.
+2017-05-26T09:16:23.839 - Job 1: Process 5052 ("C:\Program Files\AWR\V14\mpiexec.exe") ended with exit code 86.
+2017-05-26T09:16:23.839 - Job 1: peak working set = 1.087GB.
+2017-05-26T09:16:23.870 - Job 1: releasing 4 cores (core reservations available before:0, after:4)
+2017-05-26T09:16:23.870 - AWRJobLicensePolicy: Checking in feature "TOK_100".
+2017-05-26T09:16:23.948 - Job 1: File requested by remote queue AWR_JobScheduler_sim3b.sim3c: "C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{5151B0B3-20B2-4DA8-9992-3BFADCBF9E65}\AWR.scheduled_job_data.mpiexec_2208881_3.5.stderr.txt"
+2017-05-26T09:16:23.948 - Job 1: Output File sent; 0 remaining.

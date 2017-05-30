@@ -1,0 +1,84 @@
+﻿2016-04-13T12:52:52.0271 - Processing Command Line
+2016-04-13T12:52:52.0271 - Starting Job Scheduler [Host:SIM3A, PID:816, Version:13.00.8081 rev0, 64-bit]
+2016-04-13T12:52:52.0271 - Time Zone: Mountain Daylight Time (UTC-06:00)
+2016-04-13T12:52:52.0271 - Number of Physical Cores: 4
+2016-04-13T12:52:52.0271 - Number of Logical Processors: 8
+2016-04-13T12:52:52.0272 - Controller Name set to: "local service"
+2016-04-13T12:52:52.0272 - IPC Logging disabled
+2016-04-13T12:52:52.0272 - Settings folder set to: "C:\ProgramData\AWR\Design Environment\13.0"
+2016-04-13T12:52:52.0272 - Task Root Data Path set to: "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data"
+2016-04-13T12:52:52.0272 - Setting "Tasks-only" mode.
+2016-04-13T12:52:52.0272 - Command Paths will be converted to task ids
+2016-04-13T12:52:52.0272 - Verbose logging enabled
+2016-04-13T12:52:52.0272 - Allowing lower build numbers in version searches
+2016-04-13T12:52:52.0272 - Queue Type Override set to: "Automatic"
+2016-04-13T12:52:52.0272 - Setting EnforceProcessorExclusive to false
+2016-04-13T12:52:52.0272 - Max Local Processors set to: 8
+2016-04-13T12:52:52.0272 - Max Local Cores set to: 4
+2016-04-13T12:52:52.0272 - Max Running Jobs set to 1
+2016-04-13T12:52:52.0278 - Registering Task token: AXIEM[version:13.00.8081] at path "C:\Program Files (x86)\AWR\V13\AXIEM.exe"
+2016-04-13T12:52:52.0278 - Registering Task token: AXIEM[version:12.03.7688] at path "c:\Program Files (x86)\AWR\V12_release\AXIEM.exe"
+2016-04-13T12:52:52.0278 - Registering Task token: AXIEM[version:12.04.7692] at path "c:\Program Files (x86)\AWR\V12\AXIEM.exe"
+2016-04-13T12:52:52.0282 - Registering Task token: MWOffice[version:13.00.8081] at path "C:\Program Files (x86)\AWR\V13\MWOffice.exe"
+2016-04-13T12:52:52.0283 - Registering Task token: MWOffice[version:12.03.7688] at path "c:\Program Files (x86)\AWR\V12_release\MWOffice.exe"
+2016-04-13T12:52:52.0283 - Registering Task token: MWOffice[version:12.04.7692] at path "c:\Program Files (x86)\AWR\V12\MWOffice.exe"
+2016-04-13T12:52:52.0286 - Registering Task token: AWR_EMS2Proxy[version:13.00.8081] at path "C:\Program Files (x86)\AWR\V13\AWR_EMS2Proxy.exe"
+2016-04-13T12:52:52.0287 - Registering Task token: AWR_EMS2Proxy[version:12.03.7688] at path "c:\Program Files (x86)\AWR\V12_release\AWR_EMS2Proxy.exe"
+2016-04-13T12:52:52.0287 - Registering Task token: AWR_EMS2Proxy[version:12.04.7692] at path "c:\Program Files (x86)\AWR\V12\AWR_EMS2Proxy.exe"
+2016-04-13T12:52:52.0290 - Registering Task token: analyst[version:12.04.7693] at path "C:\Program Files\AWR\V12\analyst.exe"
+2016-04-13T12:52:52.0290 - Registering Task token: analyst[version:13.00.8080] at path "C:\Program Files\AWR\V13\analyst.exe"
+2016-04-13T12:52:52.0292 - Registering Task token: geopr[version:12.04.7693] at path "C:\Program Files\AWR\V12\geopr.exe"
+2016-04-13T12:52:52.0292 - Registering Task token: geopr[version:13.00.8080] at path "C:\Program Files\AWR\V13\geopr.exe"
+2016-04-13T12:52:52.0294 - Registering Task token: grsim[version:12.04.7693] at path "C:\Program Files\AWR\V12\grsim.exe"
+2016-04-13T12:52:52.0294 - Registering Task token: grsim[version:13.00.8080] at path "C:\Program Files\AWR\V13\grsim.exe"
+2016-04-13T12:52:52.0296 - Registering Task token: mpiexec[version:12.04.7693] at path "C:\Program Files\AWR\V12\mpiexec.exe"
+2016-04-13T12:52:52.0296 - Registering Task token: mpiexec[version:13.00.8080] at path "C:\Program Files\AWR\V13\mpiexec.exe"
+2016-04-13T12:52:52.0298 - Local Compute Performance set to: "high"
+2016-04-13T12:52:52.0298 - Local Memory Capacity set to: "high"
+2016-04-13T12:52:52.0298 - Queue Name set to: AWR_JobScheduler.compute_node
+2016-04-13T12:52:52.0298 - Initializing default license policy server.
+2016-04-13T12:52:52.0298 - Initializing Transport: awr_pipe_ipc
+2016-04-13T12:52:52.0300 - Entering Main Loop
+2016-04-13T12:52:52.0300 - AWRJobLicensePolicy: Found license server: "27007@sim3b"
+2016-04-13T12:52:52.0300 - AWRJobLicensePolicy::SetupForEnvFile: connect successful, checking features
+2016-04-13T12:52:52.0370 - AWRJobLicensePolicy::SetupForEnvFile: feature check successful
+2016-04-13T12:53:27.0514 - Responded to ping from AWR_JobScheduler_sim3b.sim3a
+2016-04-13T12:54:24.0406 - Client AWR_JobScheduler_sim3b.sim3a has disconnected.
+2016-04-13T12:54:45.0404 - Responded to ping from AWR_JobScheduler_sim3b.sim3a
+2016-04-13T12:54:45.0404 - Connection restored to client AWR_JobScheduler_sim3b.sim3a.
+2016-04-13T12:55:15.0137 - Responded to ping from AWR_JobSchedulerAdmin.10720-13272
+2016-04-13T12:55:15.0355 - Client AWR_JobSchedulerAdmin.10720-13272 has disconnected.
+2016-04-14T17:57:56.0087 - Responded to ping from AWR_JobSchedulerAdmin.18356-10000
+2016-04-14T17:57:56.0306 - Client AWR_JobSchedulerAdmin.18356-10000 has disconnected.
+2016-04-15T10:20:12.0050 - Job 2: Found version 13.00.8080 for task id "mpiexec"
+2016-04-15T10:20:12.0050 - Job 2: Submitted. Name="mpiexec:4.0", User="sylin", Priority=1, UniqueID={CD87C687-C1B9-4903-9799-F216E39C3220}
+2016-04-15T10:20:12.0050 - Job 2: Requesting input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{CD87C687-C1B9-4903-9799-F216E39C3220}\Analyst_Line$6.emi"
+2016-04-15T10:20:12.0050 - Job 2: Requesting input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{CD87C687-C1B9-4903-9799-F216E39C3220}\Analyst_Line$6.xml"
+2016-04-15T10:20:12.0050 - Job 2: Requesting input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{CD87C687-C1B9-4903-9799-F216E39C3220}\Analyst_Line$6.opt"
+2016-04-15T10:20:12.0050 - Job 2: MaxProcessors=4, MinProcessors=4, ThreadsPerProcessor=1, PreferredPerf="high", PreferredMemCap="high".
+2016-04-15T10:20:12.0300 - Job 2: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{CD87C687-C1B9-4903-9799-F216E39C3220}\Analyst_Line$6.emi"
+2016-04-15T10:20:12.0331 - Job 2: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{CD87C687-C1B9-4903-9799-F216E39C3220}\Analyst_Line$6.xml"
+2016-04-15T10:20:12.0362 - Job 2: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{CD87C687-C1B9-4903-9799-F216E39C3220}\Analyst_Line$6.opt"
+2016-04-15T10:20:12.0362 - Job 2: Transfer complete for all input files. Triggering license check.
+2016-04-15T10:20:12.0362 - Job 2: requesting 4 cores (4 core reservations available)
+2016-04-15T10:20:12.0362 - Job 2: reserving 4 cores (0 core reservations remaining)
+2016-04-15T10:20:12.0362 - Job 2: Reducing the number of allocated threads.
+2016-04-15T10:20:12.0362 - Job 2: requesting 4 cores (4 core reservations available)
+2016-04-15T10:20:12.0362 - Job 2: reserving 4 cores (0 core reservations remaining)
+2016-04-15T10:20:12.0362 - Job 2: Reducing the number of allocated threads.
+2016-04-15T10:20:12.0362 - Job 2: requesting 4 cores (4 core reservations available)
+2016-04-15T10:20:12.0362 - Job 2: reserving 4 cores (0 core reservations remaining)
+2016-04-15T10:20:12.0362 - Job 2: Reducing the number of allocated threads.
+2016-04-15T10:20:12.0362 - Job 2: requesting 4 cores (4 core reservations available)
+2016-04-15T10:20:12.0362 - Job 2: reserving 4 cores (0 core reservations remaining)
+2016-04-15T10:20:12.0362 - Job 2: Rejected on host SIM3A: Failed to acquire license.
+                           
+2016-04-15T10:20:12.0362 - Job 2: Failed to acquire license.
+                           
+2016-04-16T04:15:00.0825 - Responded to ping from AWR_JobSchedulerControl.SIM3A.4164
+2016-04-16T04:15:01.0043 - Received remote shutdown request from AWR_JobSchedulerControl.SIM3A.4164
+2016-04-16T04:15:01.0870 - Client AWR_JobScheduler_sim3b.sim3a has disconnected.
+2016-04-16T04:15:02.0057 - Thread Exiting: SQL Query Responder
+2016-04-16T04:15:02.0057 - Thread Exiting: Job Query Responder
+2016-04-16T04:15:02.0057 - Exiting Main Loop.
+2016-04-16T04:15:02.0057 - Job Scheduler shutting down with exit code 0x00000000

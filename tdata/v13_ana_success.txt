@@ -1,0 +1,30 @@
+2017-05-03T01:54:37.731 - Job 7: Found version 14.00.8732 for task id "mpiexec"
+2017-05-03T01:54:37.731 - Job 7: Submitted. Name="mpiexec:381353916.3", User="sylin", Priority=1, UniqueID={9E0BDFC8-D442-46D4-BC94-380BFEDF0432}
+2017-05-03T01:54:37.731 - Job 7: Successfully created network share for working directory C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{9E0BDFC8-D442-46D4-BC94-380BFEDF0432}
+2017-05-03T01:54:37.731 - Job 7: Requesting input file "C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{9E0BDFC8-D442-46D4-BC94-380BFEDF0432}\WG_to_Microstrip_Hierarchy_AsFabricated$2%2.emi"
+2017-05-03T01:54:37.731 - Job 7: Requesting input file "C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{9E0BDFC8-D442-46D4-BC94-380BFEDF0432}\WG_to_Microstrip_Hierarchy_AsFabricated$2%2.xml"
+2017-05-03T01:54:37.731 - Job 7: Requesting input file "C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{9E0BDFC8-D442-46D4-BC94-380BFEDF0432}\WG_to_Microstrip_Hierarchy_AsFabricated$2%2.opt"
+2017-05-03T01:54:37.731 - Job 7: Requesting input file "C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{9E0BDFC8-D442-46D4-BC94-380BFEDF0432}\Eband_WR12$$1735265592_7.sat"
+2017-05-03T01:54:37.731 - Job 7: MaxProcessors=4, MinProcessors=1, ThreadsPerProcessor=1, PreferredPerf="normal", PreferredMemCap="normal", NodeExclusive=false.
+2017-05-03T01:54:37.841 - Job 7: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{9E0BDFC8-D442-46D4-BC94-380BFEDF0432}\WG_to_Microstrip_Hierarchy_AsFabricated$2%2.emi"
+2017-05-03T01:54:37.950 - Job 7: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{9E0BDFC8-D442-46D4-BC94-380BFEDF0432}\WG_to_Microstrip_Hierarchy_AsFabricated$2%2.xml"
+2017-05-03T01:54:37.950 - Job 7: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{9E0BDFC8-D442-46D4-BC94-380BFEDF0432}\WG_to_Microstrip_Hierarchy_AsFabricated$2%2.opt"
+2017-05-03T01:54:38.059 - Job 7: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{9E0BDFC8-D442-46D4-BC94-380BFEDF0432}\Eband_WR12$$1735265592_7.sat"
+2017-05-03T01:54:38.059 - Job 7: Transfer complete for all input files. Triggering license check.
+2017-05-03T01:54:38.059 - Job 7: requesting 4 cores (4 core reservations available)
+2017-05-03T01:54:38.059 - Job 7: reserving 4 cores (0 core reservations remaining)
+2017-05-03T01:54:38.121 - Job 7: License feature "TOK_100" checked out.
+2017-05-03T01:54:38.121 - Job 7: Setting max memory limit to 61.941GB
+2017-05-03T01:54:38.121 - Job 7: Working Directory = C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{9E0BDFC8-D442-46D4-BC94-380BFEDF0432}
+2017-05-03T01:54:38.121 - Job 7: Creating Process "C:\Program Files\AWR\V14\mpiexec.exe"  -verbose -np 4 -localonly "C:\Program Files\AWR\V14\grsim.exe" "C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{9E0BDFC8-D442-46D4-BC94-380BFEDF0432}\WG_to_Microstrip_Hierarchy_AsFabricated$2%2.xml" /nt=1 /license_key=000953752413062095726361881951930022661 /dspath="C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{9E0BDFC8-D442-46D4-BC94-380BFEDF0432}"
+2017-05-03T01:54:38.121 - Job 7: Process creation successful
+2017-05-03T01:54:38.121 - Job 7: started mpiexec:381353916.3, procId:5220 on controller "local service"
+2017-05-03T01:54:52.146 - Job 7: Setting job to CANCELING state. Job will be terminated in 60 seconds.
+2017-05-03T01:54:52.255 - Job 7: Child process 2580 ("C:\Program Files\AWR\V14\grsim.exe") is still running.
+2017-05-03T01:54:52.255 - Job 7: Child process 3340 ("C:\Program Files\AWR\V14\pmi_proxy.exe") is still running.
+2017-05-03T01:54:52.255 - Job 7: Child process 5212 ("C:\Program Files\AWR\V14\grsim.exe") is still running.
+2017-05-03T01:54:52.255 - Job 7: Child process 6288 ("C:\Program Files\AWR\V14\grsim.exe") is still running.
+2017-05-03T01:54:52.255 - Job 7: Child process 6476 ("C:\Program Files\AWR\V14\grsim.exe") is still running.
+2017-05-03T01:54:52.255 - Job 7: Process 5220 ("C:\Program Files\AWR\V14\mpiexec.exe") ended with exit code 86.
+2017-05-03T01:54:52.255 - Job 7: peak working set = 350.758MB.
+2017-05-03T01:54:52.286 - Job 7: releasing 4 cores (core reservations available before:0, after:4)

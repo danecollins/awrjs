@@ -1,0 +1,26 @@
+2016-09-12T16:50:13.0818 - Job 8: Found version 13.00.8215 for task id "AXIEM"
+2016-09-12T16:50:13.0818 - Job 8: Submitted. Name="AXIEM:50005501.0", User="sylin", Priority=1, UniqueID={DE0B782C-E52D-4CA1-BE5C-003714F1EB6C}
+2016-09-12T16:50:13.0818 - Job 8: Requesting input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{DE0B782C-E52D-4CA1-BE5C-003714F1EB6C}\a$0.emi"
+2016-09-12T16:50:13.0818 - Job 8: Requesting input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{DE0B782C-E52D-4CA1-BE5C-003714F1EB6C}\a$0.opt"
+2016-09-12T16:50:13.0818 - Job 8: MaxProcessors=8, MinProcessors=1, ThreadsPerProcessor=1, PreferredPerf="normal", PreferredMemCap="normal", NodeExclusive=false.
+2016-09-12T16:50:13.0927 - Job 8: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{DE0B782C-E52D-4CA1-BE5C-003714F1EB6C}\a$0.emi"
+2016-09-12T16:50:13.0958 - Job 8: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{DE0B782C-E52D-4CA1-BE5C-003714F1EB6C}\a$0.opt"
+2016-09-12T16:50:13.0958 - Job 8: Transfer complete for all input files. Triggering license check.
+2016-09-12T16:50:13.0958 - Job 8: requesting 8 processors (8 processor reservations available)
+2016-09-12T16:50:13.0958 - Job 8: reserving 8 processors (0 processor reservations remaining)
+2016-09-12T16:50:26.0345 - Job 8: Deferred by license policy component. Returned to pending queue.
+2016-09-12T16:50:26.0345 - Job 8: Deferred by host SIM3A.
+2016-09-12T16:50:36.0360 - Job 8: requesting 8 processors (8 processor reservations available)
+2016-09-12T16:50:36.0360 - Job 8: reserving 8 processors (0 processor reservations remaining)
+2016-09-12T16:50:36.0454 - Job 8: License feature "TOK_100" checked out.
+2016-09-12T16:50:36.0516 - Job 8: Creating Process "C:\Program Files (x86)\AWR\V13\AXIEM.exe" /dspath="C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{DE0B782C-E52D-4CA1-BE5C-003714F1EB6C}" /iemi="C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{DE0B782C-E52D-4CA1-BE5C-003714F1EB6C}\a$0.emi" /iopt="C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{DE0B782C-E52D-4CA1-BE5C-003714F1EB6C}\a$0.opt" /max_threads=8 /license_key 345936650127758360660025503463358027464
+2016-09-12T16:50:36.0516 - Job 8: Process creation successful
+2016-09-12T16:50:36.0516 - Job 8: started AXIEM:50005501.0, procId:1784 on controller "local service"
+2016-09-12T16:52:06.0793 - Job 8: Process 1784 ("C:\Program Files (x86)\AWR\V13\AXIEM.exe") ended with exit code 0.
+2016-09-12T16:52:06.0793 - Job 8: peak working set = 364490752.
+2016-09-12T16:52:06.0824 - Job 8: releasing 8 processors (processor reservations available before:0, after:8)
+2016-09-12T16:52:06.0824 - Job 8: (AXIEM:50005501.0) Ended. Exit status: 0.
+2016-09-12T16:52:06.0856 - Job 8: File requested by remote queue AWR_JobScheduler_sim3b.sim3a: "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{DE0B782C-E52D-4CA1-BE5C-003714F1EB6C}\a.DS0.dsf"
+2016-09-12T16:52:06.0856 - Job 8: Output File sent; 0 remaining.
+2016-09-12T16:52:08.0166 - Job 8: File requested by remote queue AWR_JobScheduler_sim3b.sim3a: "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{DE0B782C-E52D-4CA1-BE5C-003714F1EB6C}\AWR.scheduled_job_data.AXIEM_50005501.0.9.stderr.txt"
+2016-09-12T16:52:08.0166 - Job 8: Output File send failed; 0 remaining. Error: Can not open outgoing file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{DE0B782C-E52D-4CA1-BE5C-003714F1EB6C}\AWR.scheduled_job_data.AXIEM_50005501.0.9.stderr.txt". OS error: No such process

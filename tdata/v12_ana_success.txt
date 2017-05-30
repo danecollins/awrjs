@@ -1,0 +1,25 @@
+2016-04-20T11:17:59.0444 - Job 2: Found version 12.03.7688 for task id "mpiexec"
+2016-04-20T11:17:59.0444 - Job 2: Submitted. Name="mpiexec:1.2", User="cbean", Priority=1, UniqueID={40981585-0E57-4E92-9000-0379C1EBD733}
+2016-04-20T11:17:59.0444 - Job 2: Requesting input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{40981585-0E57-4E92-9000-0379C1EBD733}\Parameterized_Via 1$3%1.emi"
+2016-04-20T11:17:59.0444 - Job 2: Requesting input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{40981585-0E57-4E92-9000-0379C1EBD733}\Parameterized_Via 1$3%1.xml"
+2016-04-20T11:17:59.0444 - Job 2: Requesting input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{40981585-0E57-4E92-9000-0379C1EBD733}\Parameterized_Via 1$3%1.opt"
+2016-04-20T11:17:59.0444 - Job 2: MaxProcessors=1, MinProcessors=1, ThreadsPerProcessor=1, PreferredPerf="normal", PreferredMemCap="normal".
+2016-04-20T11:17:59.0553 - Job 2: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{40981585-0E57-4E92-9000-0379C1EBD733}\Parameterized_Via 1$3%1.emi"
+2016-04-20T11:17:59.0584 - Job 2: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{40981585-0E57-4E92-9000-0379C1EBD733}\Parameterized_Via 1$3%1.xml"
+2016-04-20T11:17:59.0600 - Job 2: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{40981585-0E57-4E92-9000-0379C1EBD733}\Parameterized_Via 1$3%1.opt"
+2016-04-20T11:17:59.0600 - Job 2: Transfer complete for all input files. Triggering license check.
+2016-04-20T11:17:59.0600 - Job 2: requesting 1 core (4 core reservations available)
+2016-04-20T11:17:59.0600 - Job 2: reserving 1 core (3 core reservations remaining)
+2016-04-20T11:17:59.0709 - Job 2: License feature "TOK_100" checked out.
+2016-04-20T11:17:59.0709 - Job 2: Creating Process "C:\Program Files\AWR\V12_release\mpiexec.exe"  -verbose -np 1 -localonly "C:\Program Files\AWR\V12_release\grsim.exe" "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{40981585-0E57-4E92-9000-0379C1EBD733}\Parameterized_Via 1$3%1.xml" /nt=1 /license_key=418563563322193589885822569342848027104 /dspath=C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{40981585-0E57-4E92-9000-0379C1EBD733}
+2016-04-20T11:17:59.0709 - Job 2: started mpiexec:1.2, procId:3132 on controller "local service"
+2016-04-20T11:49:54.0288 - Job 2: Child Process 3892 ("C:\Program Files\AWR\V12_release\grsim.exe") ended with exit code 0.
+2016-04-20T11:49:54.0288 - Job 2: Child Process 3968 ("C:\Program Files\AWR\V12_release\pmi_proxy.exe") ended with exit code 0.
+2016-04-20T11:49:54.0288 - Job 2: Process 3132 ("C:\Program Files\AWR\V12_release\mpiexec.exe") ended with exit code 0.
+2016-04-20T11:49:54.0288 - Job 2: peak working set = 4024614912.
+2016-04-20T11:49:54.0320 - Job 2: releasing 1 core (core reservations available before:3, after:4)
+2016-04-20T11:49:54.0320 - Job 2: (mpiexec:1.2) Ended. Exit status: 0
+2016-04-20T11:49:54.0460 - Job 2: File requested by remote queue AWR_JobScheduler_sim3b.sim3a: "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{40981585-0E57-4E92-9000-0379C1EBD733}\Parameterized_Via 1.DS3.dsf.1"
+2016-04-20T11:49:54.0460 - Job 2: Output File sent; 0 remaining.
+2016-04-20T11:49:54.0788 - Job 2: File requested by remote queue AWR_JobScheduler_sim3b.sim3a: "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{40981585-0E57-4E92-9000-0379C1EBD733}\AWR.scheduled_job_data.mpiexec_1.2.2.stderr.txt"
+2016-04-20T11:49:54.0788 - Job 2: Output File send failed; 0 remaining. Error: Can not open outgoing file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{40981585-0E57-4E92-9000-0379C1EBD733}\AWR.scheduled_job_data.mpiexec_1.2.2.stderr.txt". OS error: No such file or directory
