@@ -400,13 +400,6 @@ class Jobs:
                     job_number = jobre.search(line).group()[6:-1]
                     j = self.__find_by_number(job_number, lineno)
                     j.working_set(line)
-                elif match(line, 'Found version'):
-                    # version comes before job has been created so we can't store it on the
-                    # job yet.
-                    # <dt> - Job 79: Found version 12.00.7489 for task id "mpiexec"
-                    version = line[line.find('version') + 8:]
-                    version = version[0:version.find(' ')]
-                    Jobs.last_version_line = version
                 elif match(line, 'Exit status'):
                     job_number = jobre.search(line).group()[6:-1]  # del  -Job and :
                     j = self.__find_by_number(job_number, lineno)
@@ -642,6 +635,9 @@ class Job:
         self.job['id'] = 'JOB' + str(Job.__JOB_COUNTER__)
         Job.__JOB_COUNTER__ += 1
         self.job['number'] = job_number
+        version = command[command.find('version') + 8:]
+        version = version[0:version.find(' ')]
+        self.job['version'] = version
 
     def submitted(self, message):
         # 2014-11-05T12:45:43.0188 - Job 1: Submitted. Name="mpiexec:3.0", User="dhoekstr",
@@ -965,6 +961,8 @@ class Job:
         d['duration_m'] = interval2float_m(self.job['duration'])
         d['wait_m'] = interval2float_m(self.job['queued'])
         d['user'] = self.job['S_User']
+        d['major_version'] = to_int_or_na(self.job['version'][:2])
+        d['minor_version'] = self.job['version']
         d['simulator'] = self.sim()
         d['host'] = self.job['host']
         d['priotiry'] = to_int_or_na(self.job['S_Priority'])
@@ -999,17 +997,3 @@ class Job:
 
     def __repr__(self):
         return 'Job({})'.format(self.job)
-
-import pdb
-if __name__ == '__main__':
-    # debug_port = sys.stdout
-    jl_obj = Jobs('logs/qtx/qtx_mid_size.txt')
-    job0 = jl_obj.joblist[0]
-    print('===== Job0 =====')
-    job0.pprint()
-
-    print('Max Queue = {}'.format(max([x.queued_jobs or 0 for x in jl_obj.timeline])))
-    print('Max Running = {}'.format(max([x.running_jobs or 0 for x in jl_obj.timeline])))
-    print('Total number of events = {}'.format(len(jl_obj.timeline)))
-    with open('queue_input.txt', 'w') as fp:
-        jl_obj.timeline.write_queue_input(fp)

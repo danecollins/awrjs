@@ -160,6 +160,8 @@ def test_axiem_v11_success_dict():
     j = Jobs('tdata/axiem_success.log')
     d = {
         'duration_m': 0.4,
+        'major_version': 11,
+        'minor_version': '11.02.7015',
         'host': 'xyz0awrsim01',
         'max_proc': 0,
         'min_proc': 1,
@@ -191,6 +193,8 @@ def test_axiem_v12_success_dict():
     j = Jobs('tdata/v12_xem_success.txt')
     d = {
         'duration_m': 0.28,
+        'major_version': 12,
+        'minor_version': '12.04.7721',
         'host': 'sim1a',
         'max_proc': 4,
         'min_proc': 1,
@@ -225,6 +229,8 @@ def test_axiem_v13_success_dict():
     j = Jobs('tdata/v13_xem_success.txt')
     d = {
         'duration_m': 0.23,
+        'major_version': 13,
+        'minor_version': '13.00.8271',
         'host': 'sim1a',
         'max_proc': 4,
         'min_proc': 1,
@@ -259,6 +265,8 @@ def test_axiem_v14_success_dict():
     j = Jobs('tdata/v14_xem_success.txt')
     d = {
         'duration_m': 3.7,
+        'major_version': 14,
+        'minor_version': '14.00.8754',
         'host': 'local service',
         'max_proc': 8,
         'min_proc': 1,
@@ -293,6 +301,8 @@ def test_analyst_v11_dict():
     j = Jobs('tdata/axiem_success.log')
     d = {
         'duration_m': 0.4,
+        'major_version': 11,
+        'minor_version': '11.02.7015',
         'host': 'xyz0awrsim01',
         'max_proc': 0,
         'min_proc': 1,
@@ -325,6 +335,8 @@ def test_analyst_v12_dict():
     j = Jobs('tdata/v12_ana_success.txt')
     d = {
         'duration_m': 31.92,
+        'major_version': 12,
+        'minor_version': '12.03.7688',
         'host': 'local service',
         'max_proc': 1,
         'min_proc': 1,
@@ -366,6 +378,8 @@ def test_analyst_v14_cancel_dict():
     j = Jobs('tdata/v14_ana_cancel.txt')
     d = {
         'duration_m': 0.23,
+        'major_version': 14,
+        'minor_version': '14.00.8732',
         'host': 'local service',
         'max_proc': 4,
         'min_proc': 1,
