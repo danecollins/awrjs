@@ -1,0 +1,22 @@
+2017-05-30T15:21:44.433 - Job 29: Found version 14.00.8754 for task id "AXIEM"
+2017-05-30T15:21:44.433 - Job 29: Submitted. Name="AXIEM:256403.0", User="mshattuc", Priority=1, UniqueID={358E9E3E-0D8D-4DB4-B89B-5B0540120C6F}
+2017-05-30T15:21:44.433 - Job 29: Successfully created network share for working directory C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{358E9E3E-0D8D-4DB4-B89B-5B0540120C6F}
+2017-05-30T15:21:44.433 - Job 29: Requesting input file "C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{358E9E3E-0D8D-4DB4-B89B-5B0540120C6F}\Freq_12p9$16.emi"
+2017-05-30T15:21:44.433 - Job 29: Requesting input file "C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{358E9E3E-0D8D-4DB4-B89B-5B0540120C6F}\Freq_12p9$16.opt"
+2017-05-30T15:21:44.433 - Job 29: MaxProcessors=8, MinProcessors=1, ThreadsPerProcessor=1, PreferredPerf="normal", PreferredMemCap="normal", NodeExclusive=false.
+2017-05-30T15:21:44.870 - Job 29: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{358E9E3E-0D8D-4DB4-B89B-5B0540120C6F}\Freq_12p9$16.emi"
+2017-05-30T15:21:44.979 - Job 29: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{358E9E3E-0D8D-4DB4-B89B-5B0540120C6F}\Freq_12p9$16.opt"
+2017-05-30T15:21:44.979 - Job 29: Transfer complete for all input files. Triggering license check.
+2017-05-30T15:21:44.994 - Job 29: requesting 8 processors (8 processor reservations available)
+2017-05-30T15:21:44.994 - Job 29: reserving 8 processors (0 processor reservations remaining)
+2017-05-30T15:21:45.088 - Job 29: License feature "TOK_100" checked out.
+2017-05-30T15:21:45.104 - Job 29: Setting max memory limit to 61.941GB
+2017-05-30T15:21:45.104 - Job 29: Working Directory = C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{358E9E3E-0D8D-4DB4-B89B-5B0540120C6F}
+2017-05-30T15:21:45.104 - Job 29: Creating Process "C:\Program Files (x86)\AWR\V14\AXIEM.exe" /dspath="C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{358E9E3E-0D8D-4DB4-B89B-5B0540120C6F}" /iemi="C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{358E9E3E-0D8D-4DB4-B89B-5B0540120C6F}\Freq_12p9$16.emi" /iopt="C:\ProgramData\AWR\Design Environment\14.0\temp\awr_job_data\{358E9E3E-0D8D-4DB4-B89B-5B0540120C6F}\Freq_12p9$16.opt" /server_type=service /max_threads=8 /license_key 104024305392490884155586809899988028421
+2017-05-30T15:21:45.104 - Job 29: Process creation successful
+2017-05-30T15:21:45.104 - Job 29: started AXIEM:256403.0, procId:4516 on controller "local service"
+2017-05-30T15:25:27.015 - Job 29: Process 4516 ("C:\Program Files (x86)\AWR\V14\AXIEM.exe") ended with exit code 0.
+2017-05-30T15:25:27.015 - Job 29: peak working set = 3.085GB.
+2017-05-30T15:25:27.062 - Job 29: releasing 8 processors (processor reservations available before:0, after:8)
+2017-05-30T15:25:27.062 - AWRJobLicensePolicy: Checking in feature "TOK_100".
+2017-05-30T15:25:27.062 - Job 29: (AXIEM:256403.0) Ended. Exit status: 0.
