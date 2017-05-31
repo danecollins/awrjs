@@ -1,0 +1,24 @@
+2017-02-08T10:11:59.0551 - Job 814: Found version 12.01.7628 for task id "AXIEM"
+2017-02-08T10:11:59.0551 - Job 814: Submitted. Name="AXIEM:5.0", User="user1", Priority=1, UniqueID={10871D0D-065C-467D-838D-BFB04816B01D}
+2017-02-08T10:11:59.0551 - Job 814: Requesting input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{10871D0D-065C-467D-838D-BFB04816B01D}\m_2p$20.emi"
+2017-02-08T10:11:59.0551 - Job 814: Requesting input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{10871D0D-065C-467D-838D-BFB04816B01D}\m_2p$20.opt"
+2017-02-08T10:11:59.0551 - Job 814: MaxProcessors=8, MinProcessors=1, ThreadsPerProcessor=1, PreferredPerf="normal", PreferredMemCap="normal", NodeExclusive=false.
+2017-02-08T10:11:59.0879 - Job 814: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{10871D0D-065C-467D-838D-BFB04816B01D}\m_2p$20.emi"
+2017-02-08T10:11:59.0895 - Job 814: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{10871D0D-065C-467D-838D-BFB04816B01D}\m_2p$20.opt"
+2017-02-08T10:11:59.0895 - Job 814: Transfer complete for all input files. Triggering license check.
+2017-02-08T10:12:00.0940 - Job 814: File requested by remote queue AWR_JobScheduler: "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{10871D0D-065C-467D-838D-BFB04816B01D}\m_2p$20.emi"
+2017-02-08T10:12:00.0940 - Job 814: Transfer started for outgoing input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{10871D0D-065C-467D-838D-BFB04816B01D}\m_2p$20.emi".
+2017-02-08T10:12:00.0940 - Job 814: Transfer complete for outgoing input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{10871D0D-065C-467D-838D-BFB04816B01D}\m_2p$20.emi".
+2017-02-08T10:12:00.0940 - Job 814: File requested by remote queue AWR_JobScheduler: "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{10871D0D-065C-467D-838D-BFB04816B01D}\m_2p$20.opt"
+2017-02-08T10:12:00.0940 - Job 814: Transfer started for outgoing input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{10871D0D-065C-467D-838D-BFB04816B01D}\m_2p$20.opt".
+2017-02-08T10:12:00.0940 - Job 814: Transfer complete for outgoing input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{10871D0D-065C-467D-838D-BFB04816B01D}\m_2p$20.opt".
+2017-02-08T10:12:01.0049 - Job 814: assigned AXIEM:5.0 to controller "awrsim1"
+2017-02-08T10:12:01.0049 - Job 814: All files reported received by remote server awrsim1.
+2017-02-08T10:12:01.0377 - Job 814: started AXIEM:5.0, procId:0 on controller "awrsim1"
+2017-02-08T10:12:01.0923 - Job 814: (AXIEM:5.0) Ended. Exit status: -2147467259
+2017-02-08T10:12:01.0923 - Job 814: peak working set = 1155072.
+2017-02-08T10:12:01.0923 - Job 814: Requesting output file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{10871D0D-065C-467D-838D-BFB04816B01D}\AWR.scheduled_job_data.AXIEM_5.0.3.stderr.txt"
+2017-02-08T10:12:01.0923 - Job 814: Preparing to wait for transfer of output file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{10871D0D-065C-467D-838D-BFB04816B01D}\AWR.scheduled_job_data.AXIEM_5.0.3.stderr.txt"
+2017-02-08T10:12:02.0032 - Job 814: Exit message: "Unknown error"
+2017-02-08T10:12:02.0172 - Job 814: File requested by remote queue AWR_JobScheduler_Local_DFWSCHEN01L_user1.awrsim10: "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{10871D0D-065C-467D-838D-BFB04816B01D}\AWR.scheduled_job_data.AXIEM_5.0.3.stderr.txt"
+2017-02-08T10:12:02.0172 - Job 814: Output File send failed; 1 remaining. Error: Can not open outgoing file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{10871D0D-065C-467D-838D-BFB04816B01D}\AWR.scheduled_job_data.AXIEM_5.0.3.stderr.txt". OS error: No such file or directory
