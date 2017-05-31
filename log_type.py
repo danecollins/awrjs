@@ -1,9 +1,10 @@
 #!/usr/bin/python
-
 import re
 import sys
+import os
 import pdb
 from optparse import OptionParser
+from js.util import expand_file_list
 
 
 usage = "usage: %prog [options] filename(s)"
@@ -23,17 +24,19 @@ if len(args) == 0:
     parser.print_help()
     exit(0)
 
+files = expand_file_list(args)
+
 p_local = re.compile('Started By')
 p_override = re.compile('Queue Type Override set to: "(.*)"')
 # p_local2 = re.compile('Remote Queue.*Type=Scheduler')
 p_scheduler = re.compile('Remote Queue.*Type=Compute')
 
-if len(args) > 1 or options.long:
+if len(files) > 1 or options.long:
     format = "long"
 else:
     format = "short"
 
-for file in args:
+for file in files:
     with open(file) as fp:
         lines = fp.readlines()
 
@@ -83,9 +86,6 @@ for file in args:
         if not (scheduler or local or override):
             print('  Default to compute')
 
-    if format == 'long':
-        print(file, ': ', end='')
-
     # determine type
     if not (scheduler or local or override):
         log_type = 'compute'
@@ -107,4 +107,9 @@ for file in args:
         log_type = 'local'
     elif override:
         log_type = override
-    print('type = {}, {:,} lines from {} to {}'.format(log_type, cnt, min_date, max_date))
+
+    print('type = {:9s}, {:7,} lines from {} to {}'.format(log_type, cnt, min_date, max_date), end='')
+    if format == 'long':
+        print(' - {} : '.format(os.path.basename(file)))
+    else:
+        print()

@@ -53,7 +53,7 @@ def elapsed2string(tm: Union[int, float, str]) -> str:
         :return str: A string with the number of minutes and hours represented
     """
 
-    if isinstance(tm, str) and tm.isdigit() == False:
+    if isinstance(tm, str) and (tm.isdigit() is False):
         return 'illegal time str <{}>'.format(tm)  # can't convert
     else:
         ftm = float(tm)  # in case tm is an int
