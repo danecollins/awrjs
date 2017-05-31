@@ -941,6 +941,8 @@ class Job:
         s += 'results_copy_m' if is_header else interval2string_m(self.job['results_copy'])
         s += ','
         s += 'uuid' if is_header else str(self.job['S_UniqueID'])
+        s += ','
+        s += 'version' if is_header else str(self.job['major_version'])
 
         return s
 
