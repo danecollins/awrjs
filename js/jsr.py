@@ -622,6 +622,8 @@ class Job:
             return 'Analyst'
         elif self.job['S_Name'].startswith('AXIEM') or self.job['S_Name'].startswith('Axiem'):
             return 'AXIEM'
+        elif self.job['S_Name'].startswith('AWR_EMS2Proxy'):
+            return 'EM_3rd_Party'
         else:
             return self.job['S_Name']
 

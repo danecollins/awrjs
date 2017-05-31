@@ -224,6 +224,42 @@ def test_axiem_v12_success_dict():
     assert '{F1205AD4-0003-438F-9001-86B335F49148}' == job.job['S_UniqueID']
 
 
+def test_axiem_v12_fail_dict():
+    assert os.path.exists('tdata/v12_xem_fail.txt'), 'Test file is missing'
+    j = Jobs('tdata/v12_xem_fail.txt')
+    d = {
+        'duration_m': 0.0,
+        'major_version': 12,
+        'minor_version': '12.01.7628',
+        'host': 'awrsim1',
+        'max_proc': 8,
+        'min_proc': 1,
+        'priotiry': 1,
+        'req_mem': 'normal',
+        'req_perf': 'normal',
+        'simulator': 'AXIEM',
+        'start_date': '2017-02-08',
+        'start_day': 'Wednesday',
+        'start_time': '10',
+        'submitted_date': '2017-02-08',
+        'submitted_day': 'Wednesday',
+        'submitted_time': '10',
+        'threads': 1,
+        'user': 'user1',
+        'wait_m': 0.03,
+        'exit': '-2147467259',
+        'files_remaining': float('nan'),
+        'working_set': 1,
+        'results_copy_m': float('nan'),
+    }
+    job = j.get_list()[0]
+    result = job.job2dict()
+    compare_dict(d, result)
+
+    # uuid is internal only so test it separately
+    assert '{10871D0D-065C-467D-838D-BFB04816B01D}' == job.job['S_UniqueID']
+
+
 def test_axiem_v13_success_dict():
     assert os.path.exists('tdata/v13_xem_success.txt'), 'Test file is missing'
     j = Jobs('tdata/v13_xem_success.txt')
@@ -405,3 +441,43 @@ def test_analyst_v14_cancel_dict():
     result = job.job2dict()
     compare_dict(d, result)
     assert '{9E0BDFC8-D442-46D4-BC94-380BFEDF0432}' == job.job['S_UniqueID']
+
+
+# ## 3rd Party Simulator
+def test_sonnet_v13_success_dict():
+    assert os.path.exists('tdata/v13_sonnet_success.txt'), 'Test file is missing'
+    j = Jobs('tdata/v13_sonnet_success.txt')
+    d = {
+        'duration_m': 0.0,
+        'major_version': 13,
+        'minor_version': '13.00.8316',
+        'host': 'sim01',
+        'max_proc': 1,
+        'min_proc': 1,
+        'priotiry': 1,
+        'req_mem': 'normal',
+        'req_perf': 'normal',
+        'simulator': 'EM_3rd_Party',
+        'start_date': '2017-03-06',
+        'start_day': 'Monday',
+        'start_time': '11',
+        'submitted_date': '2017-03-06',
+        'submitted_day': 'Monday',
+        'submitted_time': '11',
+        'threads': 1,
+        'user': 'user0',
+        'wait_m': 0.03,
+        'exit': '0',
+        'files_remaining': float('nan'),
+        'working_set': 0,
+        'results_copy_m': float('nan'),
+    }
+    job = j.get_list()[0]
+    result = job.job2dict()
+    compare_dict(d, result)
+
+    # uuid is internal only so test it separately
+    assert '{0EA2FBAB-29A1-47CA-A437-847B89492E03}' == job.job['S_UniqueID']
+
+
+
