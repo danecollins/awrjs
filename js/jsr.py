@@ -121,10 +121,10 @@ def float_to_date(f: float) -> str:
 
 def timestamp2float(ts: str) -> float:
     """ Converts a timestamp of the form 2016-03-10T04:15:02.0036 into a time float
-    
+
         Arguments:
             ts: timestamp string
-    
+
         Returns:
             floating point time from mktime with microseconds added to it.
 
@@ -351,7 +351,7 @@ class Jobs:
                 line = line.rstrip()
                 if not line:
                     continue
-                line = line[1:] if line[0]=='\ufeff' else line
+                line = line[1:] if line[0] == '\ufeff' else line
                 j = None
 # ##################################################################################### LOG PARSING
                 # Identify the type of line and dispatch to right parsing function
@@ -418,7 +418,6 @@ class Jobs:
                     j.cancelled(line)
                 elif match(line, 'Setting job to CANCELING state'):
                     job_number = jobre.search(line).group()[6:-1]
-                    print('job number is', job_number)
                     j = self.__find_by_number(job_number, lineno)
                     j.cancelled(line)
                 elif match(line, 'Terminating job'):  # 2016-....0468 - Terminating job number 26 (mpiexec:2.2)

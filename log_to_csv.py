@@ -1,17 +1,17 @@
 
 # standard python includes
-import os
 import sys
 import time
 from optparse import OptionParser
 
 # my includes
 import js.jsr as jsr
+from js.util import expand_file_list
 
 
 usage = """%prog [options] filename
        Generate a job or event log from raw scheduler log files
-       ex: %prog -o myfile.csv -t jobs concat_log_files.txt"""
+       ex: %prog -o myfile.csv -t jobs AWR_JobScheduler_x64_log.txt (or directory name)"""
 
 parser = OptionParser(usage)
 parser.add_option("-v", "--verbose",
@@ -27,19 +27,22 @@ parser.add_option('-t', '--outputtype',
 # options will be a dict of the options
 (options, args) = parser.parse_args()
 
-if len(args) != 1:
+if len(args) == 0:
     parser.print_help()
     exit(1)
 else:
-    filename = args[0]
-    if not os.path.exists(filename):
-        print("ERROR: Could not open '{}'\n".format(filename))
-        parser.print_help()
+    files = expand_file_list(args)
+    if not files:
         exit(1)
+
     if options.verbose:
         jsr.debug_port = sys.stdout
-print('Parsing log...')
-jobs = jsr.Jobs(filename)
+
+jobs = jsr.Jobs()
+print('Found {} log files.'.format(len(files)))
+for file in files:
+    job_count = jobs.read_log_file(file)
+    print('File {} contained {} jobs'.format(file, job_count))
 timeline = jobs.timeline
 
 if jobs.number_of_jobs() > 0:
