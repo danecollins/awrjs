@@ -1,0 +1,39 @@
+2017-03-06T11:51:22.0634 - Job 732: Found version 13.00.8316 for task id "AWR_EMS2Proxy"
+2017-03-06T11:51:22.0634 - Job 732: Submitted. Name="AWR_EMS2Proxy:334523479.0", User="user0", Priority=1, UniqueID={0EA2FBAB-29A1-47CA-A437-847B89492E03}
+2017-03-06T11:51:22.0650 - Job 732: Requesting input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{0EA2FBAB-29A1-47CA-A437-847B89492E03}\structure1$586.xml"
+2017-03-06T11:51:22.0650 - Job 732: Requesting input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{0EA2FBAB-29A1-47CA-A437-847B89492E03}\structure1$586.emi.xml"
+2017-03-06T11:51:22.0650 - Job 732: MaxProcessors=1, MinProcessors=1, ThreadsPerProcessor=1, PreferredPerf="normal", PreferredMemCap="normal", NodeExclusive=false.
+2017-03-06T11:51:22.0899 - Job 732: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{0EA2FBAB-29A1-47CA-A437-847B89492E03}\structure1$586.xml"
+2017-03-06T11:51:22.0915 - Job 732: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{0EA2FBAB-29A1-47CA-A437-847B89492E03}\structure1$586.emi.xml"
+2017-03-06T11:51:22.0915 - Job 732: Transfer complete for all input files. Triggering license check.
+2017-03-06T11:51:24.0490 - Job 732: File requested by remote queue AWR_JobScheduler: "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{0EA2FBAB-29A1-47CA-A437-847B89492E03}\structure1$586.xml"
+2017-03-06T11:51:24.0490 - Job 732: Transfer started for outgoing input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{0EA2FBAB-29A1-47CA-A437-847B89492E03}\structure1$586.xml".
+2017-03-06T11:51:24.0490 - Job 732: Transfer complete for outgoing input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{0EA2FBAB-29A1-47CA-A437-847B89492E03}\structure1$586.xml".
+2017-03-06T11:51:24.0490 - Job 732: File requested by remote queue AWR_JobScheduler: "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{0EA2FBAB-29A1-47CA-A437-847B89492E03}\structure1$586.emi.xml"
+2017-03-06T11:51:24.0490 - Job 732: Transfer started for outgoing input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{0EA2FBAB-29A1-47CA-A437-847B89492E03}\structure1$586.emi.xml".
+2017-03-06T11:51:24.0490 - Job 732: Transfer complete for outgoing input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{0EA2FBAB-29A1-47CA-A437-847B89492E03}\structure1$586.emi.xml".
+2017-03-06T11:51:24.0600 - Job 732: assigned AWR_EMS2Proxy:334523479.0 to controller "sim01"
+2017-03-06T11:51:24.0818 - Job 732: All files reported received by remote server sim01.
+2017-03-06T11:51:24.0818 - Job 732: started AWR_EMS2Proxy:334523479.0, procId:0 on controller "sim01"
+2017-03-06T11:51:24.0927 - Job 732: (AWR_EMS2Proxy:334523479.0) Ended. Exit status: 0
+2017-03-06T11:51:24.0927 - Job 732: peak working set = 462848.
+2017-03-06T11:51:24.0927 - Job 732: Requesting output file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{0EA2FBAB-29A1-47CA-A437-847B89492E03}\structure1$586.emi.s2p"
+2017-03-06T11:51:24.0927 - Job 732: Preparing to wait for transfer of output file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{0EA2FBAB-29A1-47CA-A437-847B89492E03}\structure1$586.emi.s2p"
+2017-03-06T11:51:25.0036 - Job 732: Unable to retrieve remote file "structure1$586.emi.s2p".
+2017-03-06T11:51:25.0036 - Job 732: Requesting output file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{0EA2FBAB-29A1-47CA-A437-847B89492E03}\structure1$586.emi.sid"
+2017-03-06T11:51:25.0036 - Job 732: Preparing to wait for transfer of output file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{0EA2FBAB-29A1-47CA-A437-847B89492E03}\structure1$586.emi.sid"
+2017-03-06T11:51:25.0146 - Job 732: Unable to retrieve remote file "structure1$586.emi.sid".
+2017-03-06T11:51:25.0146 - Job 732: Requesting output file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{0EA2FBAB-29A1-47CA-A437-847B89492E03}\structure1$586.emi.log"
+2017-03-06T11:51:25.0146 - Job 732: Preparing to wait for transfer of output file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{0EA2FBAB-29A1-47CA-A437-847B89492E03}\structure1$586.emi.log"
+2017-03-06T11:51:25.0255 - Job 732: Transfer complete for output file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{0EA2FBAB-29A1-47CA-A437-847B89492E03}\structure1$586.emi.log"
+2017-03-06T11:51:25.0255 - Job 732: Requesting output file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{0EA2FBAB-29A1-47CA-A437-847B89492E03}\AWR.scheduled_job_data.AWR_EMS2Proxy_334523479.0.38.stderr.txt"
+2017-03-06T11:51:25.0255 - Job 732: Preparing to wait for transfer of output file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{0EA2FBAB-29A1-47CA-A437-847B89492E03}\AWR.scheduled_job_data.AWR_EMS2Proxy_334523479.0.38.stderr.txt"
+2017-03-06T11:51:25.0364 - Job 732: (AWR_EMS2Proxy:334523479.0) Complete.
+2017-03-06T11:51:25.0629 - Job 732: File requested by remote queue AWR_JobScheduler_Local_dfwuser0-d_user0.sim04: "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{0EA2FBAB-29A1-47CA-A437-847B89492E03}\structure1$586.emi.s2p"
+2017-03-06T11:51:25.0629 - Job 732: Output File send failed; 0 remaining. Error: Can not open outgoing file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{0EA2FBAB-29A1-47CA-A437-847B89492E03}\structure1$586.emi.s2p". OS error: No such file or directory
+2017-03-06T11:51:25.0738 - Job 732: File requested by remote queue AWR_JobScheduler_Local_dfwuser0-d_user0.sim04: "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{0EA2FBAB-29A1-47CA-A437-847B89492E03}\structure1$586.emi.sid"
+2017-03-06T11:51:25.0738 - Job 732: Output File send failed; 0 remaining. Error: Can not open outgoing file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{0EA2FBAB-29A1-47CA-A437-847B89492E03}\structure1$586.emi.sid". OS error: No such file or directory
+2017-03-06T11:51:25.0848 - Job 732: File requested by remote queue AWR_JobScheduler_Local_dfwuser0-d_user0.sim04: "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{0EA2FBAB-29A1-47CA-A437-847B89492E03}\structure1$586.emi.log"
+2017-03-06T11:51:25.0848 - Job 732: Output File sent; 0 remaining.
+2017-03-06T11:51:25.0957 - Job 732: File requested by remote queue AWR_JobScheduler_Local_dfwuser0-d_user0.sim04: "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{0EA2FBAB-29A1-47CA-A437-847B89492E03}\AWR.scheduled_job_data.AWR_EMS2Proxy_334523479.0.38.stderr.txt"
+2017-03-06T11:51:25.0957 - Job 732: Output File send failed; 0 remaining. Error: Can not open outgoing file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{0EA2FBAB-29A1-47CA-A437-847B89492E03}\AWR.scheduled_job_data.AWR_EMS2Proxy_334523479.0.38.stderr.txt". OS error: No such process
