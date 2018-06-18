@@ -338,6 +338,7 @@ class Jobs:
         c = Counter()
         self.files.append(filename)
         with codecs.open(filename, encoding='utf-8') as fp:
+            lineno = 0
 
             jobre = re.compile('- Job \d\d*:')
             re_restore_job = re.compile('- Job \d\d* ')
@@ -475,7 +476,9 @@ class Jobs:
                     j.lines.append(line)
 
         # at end of every file close out all open jobs
-        self.restart_scheduler(line)  # don't really have a choice but to use last line for time stamp
+        # if there were no lines, do nothing since line is unset
+        if lineno > 0:
+            self.restart_scheduler(line)  # don't really have a choice but to use last line for time stamp
         return c['jobs']
 
     def add(self, job):
@@ -500,7 +503,12 @@ class Jobs:
             else:
                 print('ERROR: Could not find job matching uuid {}'.format(uuid))
                 print('       error occured on line {}'.format(lineno))
-            return False
+                # need to return something
+                job = Job()
+                job.job['number'] = jobno
+                job.job['exit'] = 'restored'
+                self.add(job)
+            return True
 
     def __find_by_number(self, n, lineno):
         """ Returns the job that matches based on the number n"""
