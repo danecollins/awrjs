@@ -722,7 +722,9 @@ class Job:
         # 2015-03-03T16:49:10.0093 - Job 97: peak working set = 4546879488.
         (message_time, job_number, command) = self.parse_job_message(message)
         size = command[command.find('=') + 2:-1]  # from equal to before period
-        if "MB" in size:
+        if "KB" in size:
+            size = float(size[:-2]) / 1024  # to MB
+        elif "MB" in size:
             size = float(size[:-2])
         elif "GB" in size:
             size = float(size[:-2]) * 1024

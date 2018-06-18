@@ -480,4 +480,37 @@ def test_sonnet_v13_success_dict():
     assert '{0EA2FBAB-29A1-47CA-A437-847B89492E03}' == job.job['S_UniqueID']
 
 
+# ## 3rd Party Simulator
+def test_working_set_in_kb():
+    assert os.path.exists('tdata/v13_working_set_kb.txt'), 'Test file is missing'
+    j = Jobs('tdata/v13_working_set_kb.txt')
+    d = {
+        'duration_m': 0.0,
+        'major_version': 13,
+        'minor_version': '13.00.8316',
+        'host': 'sim01',
+        'max_proc': 1,
+        'min_proc': 1,
+        'priotiry': 1,
+        'req_mem': 'normal',
+        'req_perf': 'normal',
+        'simulator': 'EM_3rd_Party',
+        'start_date': '2017-03-06',
+        'start_day': 'Monday',
+        'start_time': '11',
+        'submitted_date': '2017-03-06',
+        'submitted_day': 'Monday',
+        'submitted_time': '11',
+        'threads': 1,
+        'user': 'user0',
+        'wait_m': 0.03,
+        'exit': '0',
+        'files_remaining': float('nan'),
+        'working_set': 0,
+        'results_copy_m': float('nan'),
+    }
+    job = j.get_list()[0]
+    result = job.job2dict()  # note this round working set to an int.
+    assert result['working_set'] == 1, "failed: {}".format(result)
+
 

@@ -1,0 +1,20 @@
+2018-01-16T10:13:53.563 - Job 1959: Found version 13.03.8415 for task id "AXIEM"
+2018-01-16T10:13:53.563 - Job 1959: Submitted. Name="AXIEM:1166856623.3", User="chanz", Priority=1, UniqueID={F1790972-25E6-49BC-B9E7-E586AA236060}
+2018-01-16T10:13:53.563 - Job 1959: Requesting input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1790972-25E6-49BC-B9E7-E586AA236060}\I_0001$1%2.emi"
+2018-01-16T10:13:53.579 - Job 1959: Requesting input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1790972-25E6-49BC-B9E7-E586AA236060}\I_0001$1%2.opt"
+2018-01-16T10:13:53.579 - Job 1959: MaxProcessors=8, MinProcessors=1, ThreadsPerProcessor=1, PreferredPerf="normal", PreferredMemCap="normal", NodeExclusive=false.
+2018-01-16T10:13:55.248 - Job 1959: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1790972-25E6-49BC-B9E7-E586AA236060}\I_0001$1%2.emi"
+2018-01-16T10:13:55.357 - Job 1959: Transfer complete for input file "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1790972-25E6-49BC-B9E7-E586AA236060}\I_0001$1%2.opt"
+2018-01-16T10:13:55.357 - Job 1959: Transfer complete for all input files. Triggering license check.
+2018-01-16T10:14:07.915 - Job 1959: requesting 8 processors (8 processor reservations available)
+2018-01-16T10:14:07.915 - Job 1959: reserving 8 processors (0 processor reservations remaining)
+2018-01-16T10:14:07.915 - Job 1959: Setting max memory limit to 57.941GB
+2018-01-16T10:14:07.915 - Job 1959: Working Directory = C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1790972-25E6-49BC-B9E7-E586AA236060}
+2018-01-16T10:14:07.915 - Job 1959: Creating Process "c:\Program Files (x86)\AWR\V13_release\AXIEM.exe" /dspath="C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1790972-25E6-49BC-B9E7-E586AA236060}" /iemi="C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1790972-25E6-49BC-B9E7-E586AA236060}\I_0001$1%2.emi" /iopt="C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1790972-25E6-49BC-B9E7-E586AA236060}\I_0001$1%2.opt" /max_threads=8 /license_key 573290994161140474908861502416222025646
+2018-01-16T10:14:07.915 - Job 1959: Process creation successful
+2018-01-16T10:14:07.915 - Job 1959: started AXIEM:1166856623.3, procId:109164 on controller "local service"
+2018-01-16T10:14:07.993 - Job 1959: Process 109164 ("C:\Program Files (x86)\AWR\V13_release\AXIEM.exe") ended with exit code 86.
+2018-01-16T10:14:07.993 - Job 1959: peak working set = 856.000KB.
+2018-01-16T10:14:08.024 - Job 1959: releasing 8 processors (processor reservations available before:0, after:8)
+2018-01-16T10:14:09.413 - Job 1959: File requested by remote queue AWR_JobScheduler_Local_chanz-lt_chanz.sim3a: "C:\ProgramData\AWR\Design Environment\13.0\temp\awr_job_data\{F1790972-25E6-49BC-B9E7-E586AA236060}\AWR.scheduled_job_data.AXIEM_1166856623_3.8.stderr.txt"
+2018-01-16T10:14:09.413 - Job 1959: Output File sent; 0 remaining.
