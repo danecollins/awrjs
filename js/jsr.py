@@ -408,11 +408,17 @@ class Jobs:
                     job_number = jobre.search(line).group()[6:-1]  # del  -Job and :
                     j = self.__find_by_number(job_number, lineno)
                     j.exit_code(line)
-                elif match(line, 'Dequeueing job'):
+                elif match(line, '- Dequeueing job') or match(line, '- Dequeueing pending job j'):  # V11
                     job_number = dequere.search(line).group()[11:-1]
                     j = self.__find_by_number(job_number, lineno)
                     j.cancelled(line)
-                elif match(line, 'Dequeueing scheduled job'):  # v12 dequeue different from v11
+                # v12 dequeue different from v11
+                elif match(line, 'Dequeueing scheduled job'):
+                    job_number = jobre.search(line).group()[6:-1]  # del  -Job and :
+                    j = self.__find_by_number(job_number, lineno)
+                    j.cancelled(line)
+                # v14 change dequeing syntax again
+                elif match(line, ': Dequeueing job'):
                     job_number = jobre.search(line).group()[6:-1]  # del  -Job and :
                     j = self.__find_by_number(job_number, lineno)
                     j.cancelled(line)
