@@ -737,7 +737,9 @@ class Job:
         elif "GB" in size:
             size = float(size[:-2]) * 1024
         else:
-            size = int(size) / 1024 / 1024  # convert to MB
+            if size[-1] == 'B':
+                size = size[:-1]
+            size = float(size) / 1024 / 1024  # convert to MB
         self.job['working_set'] = size
 
     def releasing(self, message):
