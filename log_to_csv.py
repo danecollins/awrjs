@@ -41,8 +41,9 @@ else:
 jobs = jsr.Jobs()
 print('Found {} log files.'.format(len(files)))
 for file in files:
+    print('Processing {}...'.format(file))
     job_count = jobs.read_log_file(file)
-    print('File {} contained {} jobs'.format(file, job_count))
+    print('           contained {} jobs'.format(job_count))
 timeline = jobs.timeline
 
 if jobs.number_of_jobs() > 0:

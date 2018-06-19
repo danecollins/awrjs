@@ -52,7 +52,6 @@ def elapsed2string(tm: Union[int, float, str]) -> str:
         :param tm: (float|str): is a number of seconds
         :return str: A string with the number of minutes and hours represented
     """
-
     if isinstance(tm, str) and (not tm.isdigit()):
         return 'illegal time str <{}>'.format(tm)  # can't convert
     else:
@@ -338,6 +337,7 @@ class Jobs:
         c = Counter()
         self.files.append(filename)
         with codecs.open(filename, encoding='utf-8') as fp:
+            lineno = 0
 
             jobre = re.compile('- Job \d\d*:')
             re_restore_job = re.compile('- Job \d\d* ')
@@ -476,7 +476,9 @@ class Jobs:
                 if j:
                     j.lines.append(line)
 
-            # at end of every file close out all open jobs
+        # at end of every file close out all open jobs
+        # if there were no lines, do nothing since line is unset
+        if lineno > 0:
             self.restart_scheduler(line)  # don't really have a choice but to use last line for time stamp
         return c['jobs']
 
@@ -502,7 +504,12 @@ class Jobs:
             else:
                 print('ERROR: Could not find job matching uuid {}'.format(uuid))
                 print('       error occured on line {}'.format(lineno))
-            return False
+                # need to return something
+                job = Job()
+                job.job['number'] = jobno
+                job.job['exit'] = 'restored'
+                self.add(job)
+            return True
 
     def __find_by_number(self, n, lineno):
         """ Returns the job that matches based on the number n"""
@@ -723,12 +730,16 @@ class Job:
         # 2015-03-03T16:49:10.0093 - Job 97: peak working set = 4546879488.
         (message_time, job_number, command) = self.parse_job_message(message)
         size = command[command.find('=') + 2:-1]  # from equal to before period
-        if "MB" in size:
+        if "KB" in size:
+            size = float(size[:-2]) / 1024  # to MB
+        elif "MB" in size:
             size = float(size[:-2])
         elif "GB" in size:
             size = float(size[:-2]) * 1024
         else:
-            size = int(size) / 1024 / 1024  # convert to MB
+            if size[-1] == 'B':
+                size = size[:-1]
+            size = float(size) / 1024 / 1024  # convert to MB
         self.job['working_set'] = size
 
     def releasing(self, message):
@@ -944,6 +955,8 @@ class Job:
         s += 'results_copy_m' if is_header else interval2string_m(self.job['results_copy'])
         s += ','
         s += 'uuid' if is_header else str(self.job['S_UniqueID'])
+        s += ','
+        s += 'version' if is_header else str(self.job['major_version'])
 
         return s
 
