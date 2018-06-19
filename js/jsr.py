@@ -13,7 +13,7 @@ This is very much a work-in-progress.  For additional information or
 enhancement requests contact dane@awr.com
 """
 
-from typing import List, Union, Dict, Tuple, IO
+from typing import List, Union, Dict, Tuple, IO, Any
 
 # standard imports
 import codecs
@@ -53,7 +53,7 @@ def elapsed2string(tm: Union[int, float, str]) -> str:
         :return str: A string with the number of minutes and hours represented
     """
 
-    if isinstance(tm, str) and tm.isdigit() == False:
+    if isinstance(tm, str) and (not tm.isdigit()):
         return 'illegal time str <{}>'.format(tm)  # can't convert
     else:
         ftm = float(tm)  # in case tm is an int
@@ -273,8 +273,8 @@ class Event:
     def __str__(self):
         job_id = self.job['id'] if self.job else 'none'
         return 'Event({}, Q={}, R={}, {} {}, {})'.format(float_to_date(self.tm),
-                                                     self.queued_jobs or 0, self.running_jobs or 0,
-                                                     job_id, self.ev_type, self.seq)
+                                                         self.queued_jobs or 0, self.running_jobs or 0,
+                                                         job_id, self.ev_type, self.seq)
 
     def queue_input_fmt(self, start_time):
         """
@@ -386,7 +386,7 @@ class Jobs:
                     job_number = jobre.search(line).group()[6:-1]  # del  -Job and :
                     j = self.__find_by_number(job_number, lineno)
                     j.releasing(line)
-                elif match(line, 'Job Scheduler shutting down'):  # Job Scheduler shutting down with exit code 0x00000000
+                elif match(line, 'Job Scheduler shutting down'):  # Scheduler shutting down with exit code 0x00000000
                     dprint('DEBUG: restarting scheduler on line {}'.format(lineno))
                     self.restart_scheduler(line, shutdown=True)
                 elif match(line, 'Processing Command Line'):
@@ -471,11 +471,13 @@ class Jobs:
                     j.files_remaining(line)
                 else:
                     dprint('unmatched line:', line)
+
+                # mostly for debugging we want to track all the lines used in creating the job
                 if j:
                     j.lines.append(line)
 
-        # at end of every file close out all open jobs
-        self.restart_scheduler(line)  # don't really have a choice but to use last line for time stamp
+            # at end of every file close out all open jobs
+            self.restart_scheduler(line)  # don't really have a choice but to use last line for time stamp
         return c['jobs']
 
     def add(self, job):
@@ -578,7 +580,6 @@ class Jobs:
                     header = False
 
                 print(j.job2csv(header), file=fp)
-
 
 
 class Job:
